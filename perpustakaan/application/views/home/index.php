@@ -1,19 +1,16 @@
-
 <body>
   <!--/ Form Search End /-->
 
   <!--/ Nav Star /-->
   <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
     <div class="container">
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
-        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <a class="navbar-brand text-brand" href="index.html"><span class="color-b">K-NEGABON </span>Library</a>
-      <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
-        data-target="#navbarTogglerDemo01" aria-expanded="false">
+      <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
         <span class="fa fa-search" aria-hidden="true"></span>
       </button>
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
@@ -25,7 +22,7 @@
             <a class="nav-link" href="registrasi.php">Daftar Member</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="buku.php">Buku</a> 
+            <a class="nav-link" href="buku.php">Buku</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="bantuan.php">Bantuan</a>
@@ -35,8 +32,7 @@
           </li>
         </ul>
       </div>
-      <button type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block  " data-toggle="collapse"
-        data-target="#navbarTogglerDemo01" aria-expanded="false">
+      <button type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block  " data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
         <span class="search" aria-hidden="true">Cek Peminjaman</span>
       </button>
     </div>
@@ -45,19 +41,19 @@
   <div class="click-closed"></div>
   <!--/ Form Search Star /-->
   <div class="box-collapse">
-    <div class="title-box-d">  
+    <div class="title-box-d">
       <h3 class="title-d">Cari Peminjaman Siswa</h3>
     </div>
     <span class="close-box-collapse right-boxed ion-ios-close"></span>
     <a class="btn btn-b" href="cari_literasi.php">Cari Literasi</a>
     <a class="btn btn-b" href="cari_tahunan.php">Cari Tahunan</a>
-         
-           
-           
-          </div>
-        </div>
-      </form>
-    </div>
+
+
+
+  </div>
+  </div>
+  </form>
+  </div>
   </div>
 
 
@@ -122,7 +118,7 @@
                       <br>68216</p>
                     <h1 class="intro-title mb-4">
                       <span class="color-b">TUT WURI </span>HANDAYANI
-                      </h1><br><br><br>
+                    </h1><br><br><br>
                     <p class="intro-subtitle intro-price">
                       <a href="http://www.smkn3bondowoso.sch.id/"><span class="price-a">SMKN 3 BONDOWOSO</span></a>
                     </p>
@@ -159,11 +155,11 @@
               <div class="card-title-c align-self-center">
                 <h2 class="title-c">Mapel</h2>
               </div>
-            </div> 
+            </div>
             <div class="card-body-c">
               <p class="content-c">
-                Buku mapel merupakan buku acuan wajib yang digunakan sekolah berisikan materi pembelajaran, waktu pinjam dalam 
-                buku mapel setiap 2 jam selama jadwal mata pelajaran berlangsung. 
+                Buku mapel merupakan buku acuan wajib yang digunakan sekolah berisikan materi pembelajaran, waktu pinjam dalam
+                buku mapel setiap 2 jam selama jadwal mata pelajaran berlangsung.
               </p>
             </div>
           </div>
@@ -198,8 +194,8 @@
             </div>
             <div class="card-body-c">
               <p class="content-c">
-               Buku literasi merupakan buku yang digunakan untuk upaya menumbuhkan budi pekerti siswa bertujuan 
-               agar siswa memiliki budaya membaca dan menulis serta menumbuhkan minat baca.
+                Buku literasi merupakan buku yang digunakan untuk upaya menumbuhkan budi pekerti siswa bertujuan
+                agar siswa memiliki budaya membaca dan menulis serta menumbuhkan minat baca.
               </p>
             </div>
           </div>
@@ -208,18 +204,19 @@
     </div>
   </section>
   <!--/ Services End /-->
- <!--/ tampilkan buku /-->
- <style>
- .img-box-a {
-   width : 350px;
-   height : 450px;
- }
-  .img-box-a img {
-   width : 100%;
-   height : 100%;
- }
- </style>
- <section class="section-property section-t8">
+  <!--/ tampilkan buku /-->
+  <style>
+    .img-box-a {
+      width: 350px;
+      height: 450px;
+    }
+
+    .img-box-a img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <section class="section-property section-t8">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -228,7 +225,7 @@
               <h2 class="title-a">Buku</h2>
             </div>
             <div class="title-link">
-            <a href="buku.php">Semua Buku
+              <a href="buku.php">Semua Buku
                 <span class="ion-ios-arrow-forward"></span>
               </a>
             </div>
@@ -236,39 +233,46 @@
         </div>
       </div>
       <div id="property-carousel" class="owl-carousel owl-theme">
-      <?php //foreach ( $buku_literasi_umum as $row) : ?>
+        <?php //foreach ( $buku_literasi_umum as $row) : 
+        ?>
         <div class="carousel-item-b">
           <div class="card-box-a card-shadow">
             <div class="img-box-a">
-              <img src="admin/img/literasi/<?php //echo $row["gambar_sampul"]; ?>" alt="" class="img-a img-fluid">
+              <img src="admin/img/literasi/<?php //echo $row["gambar_sampul"]; 
+                                            ?>" alt="" class="img-a img-fluid">
             </div>
             <div class="card-overlay">
               <div class="card-overlay-a-content">
                 <div class="card-header-a">
                   <h2 class="card-title-a">
-                  <?php //echo $row["judul_buku_literasi"];?>
+                    <?php //echo $row["judul_buku_literasi"];
+                    ?>
                   </h2>
                 </div>
                 <div class="card-body-a">
-                  <a href="detail_buku.php?id=<?php //echo $row ['kode_buku_literasi']; ?>" class="link-a">Lihat Detail Buku
+                  <a href="detail_buku.php?id=<?php //echo $row ['kode_buku_literasi']; 
+                                              ?>" class="link-a">Lihat Detail Buku
                     <span class="ion-ios-arrow-forward"></span>
                   </a>
                 </div>
                 <div class="card-footer-a text-center">
                   <ul class="card-info d-flex justify-content-around">
-                  <li>
+                    <li>
                       <h4 class="card-info-title">Kode Buku</h4>
-                      <span><?php //$row['kode_buku_literasi']; ?>
+                      <span><?php //$row['kode_buku_literasi']; 
+                            ?>
                       </span>
                     </li>
                     <li>
                       <h4 class="card-info-title">Terbit</h4>
-                      <span><?php //$row['tahun_terbit']; ?>
+                      <span><?php //$row['tahun_terbit']; 
+                            ?>
                       </span>
                     </li>
                     <li>
                       <h4 class="card-info-title">Rak</h4>
-                      <span><?php //$row['id_rak']; ?>
+                      <span><?php //$row['id_rak']; 
+                            ?>
                       </span>
                     </li>
                   </ul>
@@ -277,7 +281,8 @@
             </div>
           </div>
         </div>
-        <?php //endforeach ; ?>
+        <?php //endforeach ; 
+        ?>
       </div>
     </div>
   </section>
@@ -312,11 +317,11 @@
               </div>
               <div class="card-body-d">
                 <p class="content-d color-text-a">
-                  
+
                 </p>
                 <div class="info-agents color-a">
                   <p>
-                    <strong></strong></p> 
+                    <strong></strong></p>
                   <p>
                     <strong></strong></p>
                 </div>
@@ -371,7 +376,7 @@
               </div>
               <div class="card-body-d">
                 <p class="content-d color-text-a">
-                  
+
                 </p>
                 <div class="info-agents color-a">
                   <p>
@@ -392,7 +397,7 @@
                       <a href="#" class="link-one">
                         <i class="fa fa-twitter" aria-hidden="true"></i>
                       </a>
-                    </li> 
+                    </li>
                     <li class="list-inline-item">
                       <a href="#" class="link-one">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -430,7 +435,7 @@
               </div>
               <div class="card-body-d">
                 <p class="content-d color-text-a">
-                  
+
                 </p>
                 <div class="info-agents color-a">
                   <p>
@@ -616,9 +621,9 @@
                 <div class="testimonials-content">
                   <p class="testimonial-text">
                     Developer terdiri dari : <br>
-                    1. Irfan Giovani 
-                    2. Yudi Iriyanto 
-                    3. Ilham Robby Sanjaya 
+                    1. Irfan Giovani
+                    2. Yudi Iriyanto
+                    3. Ilham Robby Sanjaya
                     4. Azizah Wina Sriwinarsih
                     5. Muhammad Ansori
                   </p>
@@ -630,7 +635,7 @@
                       <span>Leader</span>
                       <h5 class="text-center">IRFAN</h5>
                     </a>
-<!-- 
+                    <!-- 
                     <div class="overlay"></div> -->
                   </div>
                   <div class="testimonial-box">
@@ -642,23 +647,23 @@
                   </div>
                   <div class="testimonial-box">
                     <a href="#gambar-3">
-                    <img src="img/team/ilhamkotak.jpg" alt="" class="testimonial-avatar">
-                    <span>Dev.Team</span>
-                    <h5 class="text-center">ILHAM</h5>
+                      <img src="img/team/ilhamkotak.jpg" alt="" class="testimonial-avatar">
+                      <span>Dev.Team</span>
+                      <h5 class="text-center">ILHAM</h5>
                     </a>
                   </div>
                   <div class="testimonial-box">
                     <a href="#gambar-4">
-                    <img src="img/team/winakotak2.jpg" alt="" class="testimonial-avatar">
-                    <span>Dev.Team</span>
-                    <h5 class="text-center">WINA</h5>
+                      <img src="<?php base_url() ?>assets/img/team/winakotak2.jpg" alt="" class="testimonial-avatar">
+                      <span>Dev.Team</span>
+                      <h5 class="text-center">WINA</h5>
                     </a>
                   </div>
                   <div class="testimonial-box">
                     <a href="#gambar-5">
-                    <img src="img/team/ansorikotak.jpg" alt="" class="testimonial-avatar">
-                    <span>Dev.Team</span>
-                    <h5 class="text-center">ANSORI</h5>
+                      <img src="img/team/ansorikotak.jpg" alt="" class="testimonial-avatar">
+                      <span>Dev.Team</span>
+                      <h5 class="text-center">ANSORI</h5>
                     </a>
                   </div>
                 </div>
@@ -671,9 +676,9 @@
             <div class="row">
               <div class="col-sm-12 col-md-6">
                 <div class="testimonial-img">
-                <video width="550px" height="400px" controls>
-	              	<source src="img/vidio.mp4" type="video/mp4">
-	              </video>
+                  <video width="550px" height="400px" controls>
+                    <source src="<?php base_url() ?>assets/img/vidio.mp4" type="video/mp4">
+                  </video>
                 </div>
               </div>
               <div class="col-sm-12 col-md-6">
@@ -682,7 +687,7 @@
                 </div>
                 <div class="testimonials-content">
                   <p class="testimonial-text">
-                  SMK Negeri 3 Bondowoso sebagai lembaga pendidikan yang dapat diakui sebagai pengembang generasi yang profesional dan berbasis skill dan kompetensi serta dapat bersaing dalam Pasar Kerja Global. Dari sisi kelembagaan secara periodisasi, SMK Negeri 3 didirikan di Bondowoso oleh Bupati Bondoowso dengan nomor SK Pendirian : 617 tahun 2003 pada tanggal SK : 06 Oktober 2003
+                    SMK Negeri 3 Bondowoso sebagai lembaga pendidikan yang dapat diakui sebagai pengembang generasi yang profesional dan berbasis skill dan kompetensi serta dapat bersaing dalam Pasar Kerja Global. Dari sisi kelembagaan secara periodisasi, SMK Negeri 3 didirikan di Bondowoso oleh Bupati Bondoowso dengan nomor SK Pendirian : 617 tahun 2003 pada tanggal SK : 06 Oktober 2003
                   </p>
                 </div>
               </div>
@@ -693,4 +698,3 @@
     </div>
   </section>
   <!--/ Testimonials End /-->
-
