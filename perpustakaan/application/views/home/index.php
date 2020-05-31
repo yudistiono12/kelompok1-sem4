@@ -21,7 +21,7 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a class="active" href="<?= base_url('assets/home-templates/') ?>index.html">home</a></li>
-                                        <li><a href="<?= base_url('assets/home-templates/') ?>Courses.html">Courses</a></li>
+                                        <li><a href="<?= base_url('Home/profile/') ?>">Profile</a></li>
                                         <li><a href="#">pages <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
                                                 <li><a href="<?= base_url('assets/home-templates/') ?>course_details.html">course details</a></li>
