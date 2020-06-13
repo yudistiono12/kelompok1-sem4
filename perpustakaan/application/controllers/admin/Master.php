@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 /**
  * 
  */
-class Master extends Auth_Controller
+class Master extends Login_Controller
 {
 		public function __construct() {
 			parent::__construct();

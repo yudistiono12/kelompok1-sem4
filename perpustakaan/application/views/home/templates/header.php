@@ -37,7 +37,7 @@
                     <div class="row align-items-center no-gutters">
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo-img">
-                                <a href="<?= base_url ('Home/index'); ?>">
+                                <a href="<?= base_url('Home/index'); ?>">
                                     <img src="<?= base_url('assets/home-templates/') ?>img/logo.png" alt="">
                                 </a>
                             </div>
@@ -46,7 +46,7 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a class="active" href="<?= base_url ('Home/index'); ?>">home</a></li>
+                                        <li><a class="active" href="<?= base_url('Home/index'); ?>">home</a></li>
                                         <li><a href="<?= base_url('Home/profil'); ?>">Profile</a></li>
                                         <li><a href="<?= base_url('Home/rules/'); ?>">Rules</a></li>
                                         <li><a href="#">pages <i class="ti-angle-down"></i></a>
@@ -70,7 +70,7 @@
                             <div class="log_chat_area d-flex align-items-center">
                                 <a href="#test-form" class="login popup-with-form">
                                     <i class="flaticon-user"></i>
-                                    <span>log in</span>
+                                    <span><a href="<?= base_url('Home/login'); ?>">log in</a></span>
                                 </a>
                                 <div class="live_chat_btn">
                                     <a class="boxed_btn_orange" href="#">
@@ -87,6 +87,6 @@
                 </div>
             </div>
         </div>
-        
+
     </header>
     <!-- header-end -->
