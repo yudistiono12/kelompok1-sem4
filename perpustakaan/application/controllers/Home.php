@@ -81,7 +81,39 @@ class Home extends CI_Controller
 				'message',
 				'<div class="alert alert-danger" role="alert">Akun anda tidak ditemukan!</div>'
 			);
-			redirect('login');
+			redirect('home/login');
+		}
+	}
+
+	public function registrasi()
+	{
+		$this->form_validation->set_rules('username', 'Username', 'required|trim');
+
+		$this->form_validation->set_rules('password1', 'Password', 'required|trim|min_length[3]|matches[password2]');
+		$this->form_validation->set_rules('password2', 'Password', 'required|trim|matches[password1]');
+
+
+		if ($this->form_validation->run() == false) {
+			$data['title'] = 'Form Registrasi';
+			$this->load->view('home/templates/header', $data);
+			$this->load->view('register_admin', $data);
+			$this->load->view('home/templates/footer');
+		} else {
+			$data = [
+				'username' => htmlspecialchars($this->input->post('username', true)),
+				'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
+				'id_jenis' => 1
+			];
+
+			$this->db->insert('autentikasi', $data);
+
+			// $this->_sendEmail();
+
+			$this->session->set_flashdata(
+				'message',
+				'<div class="alert alert-success" role="alert">Data anda ditambahkan. Silahkan Login</div>'
+			);
+			redirect('home/login');
 		}
 	}
 }

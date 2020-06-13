@@ -40,14 +40,14 @@
                     <!-- general form elements -->
                     <div class="card card-primary">
                         <div class="card-header">
-                            <h3 class="card-title">Login</h3>
+                            <h3 class="card-title">REGISTRASI</h3>
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
 
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form role="form" method="post" action="<?= base_url('home/login'); ?>">
+                        <form role="form" method="post" action="<?= base_url('home/registrasi'); ?>">
                             <div class="card-body">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Username</label>
@@ -56,8 +56,13 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
-                                    <?= form_error('password', ' <small class="text-danger pl-2">', '</small>'); ?>
+                                    <input type="password" class="form-control" id="password1" name="password1" placeholder="Maukkan Password">
+                                    <?= form_error('password1', ' <small class="text-danger pl-2">', '</small>'); ?>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Konfirmasi Password</label>
+                                    <input type="password" class="form-control" id="password2" name="password2" placeholder="masuukkan kembali password">
+                                    <?= form_error('password2', ' <small class="text-danger pl-2">', '</small>'); ?>
                                 </div>
 
                             </div>
