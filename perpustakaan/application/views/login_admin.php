@@ -44,7 +44,7 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-
+                        <?= $this->session->flashdata('message'); ?>
                         <!-- /.card-header -->
                         <!-- form start -->
                         <form role="form" method="post" action="<?= base_url('home/login'); ?>">
