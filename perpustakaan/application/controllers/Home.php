@@ -30,7 +30,7 @@ class Home extends CI_Controller
 
 	public function login()
 	{
-		// if ($this->session->userdata('email')) {
+		// if ($this->session->userdata('')) {
 		// 	redirect('profile');
 		// }
 
@@ -38,7 +38,7 @@ class Home extends CI_Controller
 		$this->form_validation->set_rules('password', 'Password', 'trim|required');
 
 		if ($this->form_validation->run() == false) {
-			$data['title'] = 'Tempat Login';
+			$data['title'] = 'Form Login';
 			$this->load->view('home/templates/header', $data);
 			$this->load->view('login/index', $data);
 			$this->load->view('home/templates/footer', $data);
@@ -47,10 +47,16 @@ class Home extends CI_Controller
 			$this->_masuk();
 		}
 	}
+
 	private function _masuk()
 	{
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
+
+		$where = array(
+			'username' => $username,
+			'password' => $password
+		);
 
 		$user = $this->db->get_where('autentikasi', ['username' => $username])->row_array();
 
@@ -58,11 +64,12 @@ class Home extends CI_Controller
 		if ($user) {
 			//jika usernya aktif
 			//cek password
-			if (md5($password, $user['password'])) {
+			if (password_verify($password, $user['password'])) {
 				$data = [
 					'id_autentikasi' => $user['id_autentikasi'],
 					'id_jenis' => $user['id_jenis'],
 				];
+				$this->session->set_userdata($data);
 
 				if ($user['id_jenis'] == 1) {
 					redirect('admin/dashboard');
@@ -102,12 +109,12 @@ class Home extends CI_Controller
 			$data = [
 				'username' => htmlspecialchars($this->input->post('username', true)),
 				'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
-				'id_jenis' => 1
+				'id_jenis' => 1,
+				'nama'	   => "",
+				'image'	   => "default.jpg"
 			];
 
 			$this->db->insert('autentikasi', $data);
-
-			// $this->_sendEmail();
 
 			$this->session->set_flashdata(
 				'message',
