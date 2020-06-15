@@ -40,7 +40,7 @@ class Home extends CI_Controller
 		if ($this->form_validation->run() == false) {
 			$data['title'] = 'Tempat Login';
 			$this->load->view('home/templates/header', $data);
-			$this->load->view('login_admin', $data);
+			$this->load->view('login/index', $data);
 			$this->load->view('home/templates/footer', $data);
 		} else {
 			//validasinya sukses
