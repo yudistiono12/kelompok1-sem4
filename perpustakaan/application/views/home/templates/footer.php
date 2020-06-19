@@ -11,9 +11,7 @@
                                 </a>
                             </div>
                             <p>
-                                finloan@support.com <br>
-                                +10 873 672 6782 <br>
-                                600/D, Green road, NewYork
+                               Jl. Raya Situbondo, Blindungan, Kec. Bondowoso, Kabupaten Bondowoso, Jawa Timur 68211
                             </p>
                             <div class="socail_links">
                                 <ul>
@@ -45,12 +43,12 @@
                     <div class="col-xl-2 col-md-6 col-lg-2">
                         <div class="footer_widget wow fadeInUp" data-wow-duration="1.1s" data-wow-delay=".4s">
                             <h3 class="footer_title">
-                                Company
+                                Layanan
                             </h3>
                             <ul>
-                                <li><a href="#">About </a></li>
-                                <li><a href="#"> Pricing</a></li>
-                                <li><a href="#">Carrier Tips</a></li>
+                                <li><a href="#">Jam Pelayanan </a></li>
+                                <li><a href="#">Keanggotaan</a></li>
+                                <li><a href="#">Sirkulasi</a></li>
                                 <li><a href="#">FAQ</a></li>
                             </ul>
 
@@ -59,13 +57,14 @@
                     <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="footer_widget wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".5s">
                             <h3 class="footer_title">
-                                Category
+                                E-Resource
                             </h3>
                             <ul>
-                                <li><a href="#">Design & Art</a></li>
-                                <li><a href="#">Engineering</a></li>
-                                <li><a href="#">Sales & Marketing</a></li>
-                                <li><a href="#">Finance</a></li>
+                                <li><a href="https://e-library.polije.ac.id/index.php?title=&author=&subject=&isbn=&colltype=E-jurnal&location=0&gmd=0&searchtype=advance&search=search">Katalog jurnal online</a></li>
+                                <li><a href="http://perpustakaan.polije.ac.id:81/">Katalog Buku Perpus Polije</a></li>
+                                <li><a href="https://e-library.polije.ac.id/">E-library</a></li>
+                                <li><a href="https://e-library.polije.ac.id/index.php?title=&author=&subject=&isbn=&colltype=Skripsi&location=0&gmd=0&searchtype=advance&search=search">Skripsi</a></li>
+                                <li><a href="https://e-library.polije.ac.id/index.php?title=&author=&subject=&isbn=&colltype=Tesis&location=0&gmd=0&searchtype=advance&search=search">Tesis</a></li>
                             </ul>
                         </div>
                     </div>

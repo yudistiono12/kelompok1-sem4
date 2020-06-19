@@ -1,337 +1,146 @@
- <!-- bradcam_area_start -->
-        <div class="bradcam_area breadcam_bg overlay2">
-            <h3>About Us</h3>
-        </div>
-        <!-- bradcam_area_end -->
-
-    <!-- about_area_start -->
-    <div class="about_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-5 col-lg-6">
-                    <div class="single_about_info">
-                        <h3>Over 7000 Tutorials <br>
-                            from 20 Courses</h3>
-                        <p>Our set he for firmament morning sixth subdue darkness creeping gathered divide our let god
-                            moving. Moving in fourth air night bring upon you’re it beast let you dominion likeness open
-                            place day great wherein heaven sixth lesser subdue fowl </p>
-                        <a href="#" class="boxed_btn">Enroll a Course</a>
-                    </div>
-                </div>
-                <div class="col-xl-6 offset-xl-1 col-lg-6">
-                    <div class="about_tutorials">
-                        <div class="courses">
-                            <div class="inner_courses">
-                                <div class="text_info">
-                                    <span>20+</span>
-                                    <p> Courses</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="courses-blue">
-                            <div class="inner_courses">
-                                <div class="text_info">
-                                    <span>7638</span>
-                                    <p> Courses</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="courses-sky">
-                            <div class="inner_courses">
-                                <div class="text_info">
-                                    <span>230+</span>
-                                    <p> Courses</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- about_area_end -->
-
-    <!-- our_team_member_start -->
-    <div class="our_team_member">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-md-6 col-lg-3">
-                    <div class="single_team">
-                        <div class="thumb">
-                            <img src="img/team/1.png" alt="">
-                            <div class="social_link">
-                                <a href="#"><i class="fa fa-envelope"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="master_name text-center">
-                            <h3>Macau Wilium</h3>
-                            <p>Massage Master</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 col-lg-3">
-                    <div class="single_team">
-                        <div class="thumb">
-                            <img src="img/team/2.png" alt="">
-                            <div class="social_link">
-                                <a href="#"><i class="fa fa-envelope"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="master_name text-center">
-                            <h3>Dan Jacky</h3>
-                            <p>Mens Cut</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 col-lg-3">
-                    <div class="single_team">
-                        <div class="thumb">
-                            <img src="img/team/3.png" alt="">
-                            <div class="social_link">
-                                <a href="#"><i class="fa fa-envelope"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="master_name text-center">
-                            <h3>Luka Luka</h3>
-                            <p>Mens Cut</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 col-lg-3">
-                    <div class="single_team">
-                        <div class="thumb">
-                            <img src="img/team/4.png" alt="">
-                            <div class="social_link">
-                                <a href="#"><i class="fa fa-envelope"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="master_name text-center">
-                            <h3>Rona Dana</h3>
-                            <p>Ladies Cut</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- our_team_member_end -->
-
-    <!-- testimonial_area_start -->
-    <div class="testimonial_area testimonial_bg_1 overlay">
-        <div class="testmonial_active owl-carousel">
-            <div class="single_testmoial">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="testmonial_text text-center">
-                                <div class="author_img">
-                                    <img src="img/testmonial/author_img.png" alt="">
-                                </div>
-                                <p>
-                                    "Working in conjunction with humanitarian aid <br> agencies we have supported
-                                    programmes to <br>
-                                    alleviate.
-                                    human suffering.
-
-                                </p>
-                                <span>- Jquileen</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single_testmoial">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="testmonial_text text-center">
-                                <div class="author_img">
-                                    <img src="img/testmonial/author_img.png" alt="">
-                                </div>
-                                <p>
-                                    "Working in conjunction with humanitarian aid <br> agencies we have supported
-                                    programmes to <br>
-                                    alleviate.
-                                    human suffering.
-
-                                </p>
-                                <span>- Jquileen</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- testimonial_area_end -->
-
-    <!-- our_courses_start -->
-    <div class="our_courses">
+ <!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_bg_1">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="section_title text-center mb-100">
-                        <h3>Our Course Speciality</h3>
-                        <p>Your domain control panel is designed for ease-of-use and <br>
-                            allows for all aspects of your domains.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-md-6 col-lg-6">
-                    <div class="single_course text-center">
-                        <div class="icon">
-                            <i class="flaticon-art-and-design"></i>
-                        </div>
-                        <h3>Premium Quality</h3>
-                        <p>
-                            Your domain control panel is designed for ease-of-use <br> and <br>
-                            allows for all aspects of
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 col-lg-6">
-                    <div class="single_course text-center">
-                        <div class="icon blue">
-                            <i class="flaticon-business-and-finance"></i>
-                        </div>
-                        <h3>Premium Quality</h3>
-                        <p>
-                            Your domain control panel is designed for ease-of-use <br> and <br>
-                            allows for all aspects of
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 col-lg-6">
-                    <div class="single_course text-center">
-                        <div class="icon">
-                            <i class="flaticon-premium"></i>
-                        </div>
-                        <h3>Premium Quality</h3>
-                        <p>
-                            Your domain control panel is designed for ease-of-use <br> and <br>
-                            allows for all aspects of
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 col-lg-6">
-                    <div class="single_course text-center">
-                        <div class="icon gradient">
-                            <i class="flaticon-crown"></i>
-                        </div>
-                        <h3>Premium Quality</h3>
-                        <p>
-                            Your domain control panel is designed for ease-of-use <br> and <br>
-                            allows for all aspects of
-                        </p>
+                    <div class="bradcam_text">
+                        <h4>Tata Tertib</h4>
+                        <h4>Perpustakaan Politeknik Negeri Jember Kampus Bondowoso</h4>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- our_courses_end -->
+    <!--/ bradcam_area  -->
 
-    <!-- subscribe_newsletter_Start -->
-    <div class="subscribe_newsletter">
+    <div class="job_details_area">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6 col-lg-6">
-                    <div class="newsletter_text">
-                        <h3>Subscribe Newsletter</h3>
-                        <p>Your domain control panel is designed for ease-of-use and allows for all aspects of your</p>
+                <div class="col-lg-8">
+                    <div class="job_details_header">
+                        <div class="single_jobs white-bg d-flex justify-content-between">
+                            <div class="jobs_left d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="img/svg_icon/1.svg" alt="">
+                                </div>
+                                <div class="jobs_conetent">
+                                    <a href="#"><h4>Tata Tertib</h4></a>
+                                    <div class="links_locat d-flex align-items-center">
+                                        <div class="location">
+                                            <p> <i class="fa fa-map-marker"></i> Bondowoso,Polije</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="jobs_right">
+                                <div class="apply_now">
+                                    <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xl-5 offset-xl-1 col-lg-6">
-                    <div class="newsletter_form">
-                        <h4>Your domain control panel is</h4>
-                        <form action="#" class="newsletter_form">
-                            <input type="text" placeholder="Enter your mail">
-                            <button type="submit">Sign Up</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- subscribe_newsletter_end -->
+                    <div class="descript_wrap white-bg">
+                        <div class="single_wrap">
+                            <h4>I. KETENTUAN UMUM</h4>
+                            <p>1. Anggota/pengunjung harus berpakain dan sopan <br> </p>
+                            <p>2. Anggota/pengunjung Perpustakaan harus menitipkan tas,map,buku pribadidi tempat penitipan <br></p>
+                            <p>3. Anggota/pengunjung perpustakaan harus mengisi absensi pengunjung perpustakaan <br></p>
+                            <p>4. Anggota/pengunjung perpustakaan harus menjaga ketenangan,ketertiban selama berada dalam ruangan perpustakaan <br> </p>
+                            <p>5. Bahan pustaka yang telah diambil dari rak agar tetap di letakan di meja baca <br> </p>
+                            <p>6. Koleksi buku khusus dan referensi hanya di baca di tempat <br> </p>
+                            <p>7. Bagi pengunjung yang ingin mem - foto copy bahan pustaka di luar area perpustakaan di wajibkan mengisi buku pinjaman, meninggalakan kartu anggota/KTP dan bahan pustakan di kembelikan pada hari yang sama <br></p>
+                            <p>8. Pengunjung perpustakaan tidak di kenai biaya apapun memasuki area perpustakaan <br></p>
+                        </div>
+                        <div class="single_wrap">
+                            <h4>II. PERATURAN SIRKULASI/PEMINJAMAN</h4>
+                            <ul>
+                                 1. JAM LAYANAN <br>  SENIN-KAMIS  <br>
 
-    <!-- our_latest_blog_start -->
-    <div class="our_latest_blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="section_title text-center mb-100">
-                        <h3>Our Latest Blog</h3>
+                            <li> BUKA                08:00-12;00 </li>
+                            <li>ISTIRAHAT         12;00-13;00</li>
+                            <li>BUKA                 13;00-16;00  </li> 
+
+                           <br> JUM'AT <br>
+                           <li>BUKA                 08;00-11;00 </li>      
+                           <li>ISTIRAHAT         11;00-13;30</li>             
+                           <li>BUKA                 13;30-16;30</li>  
+                            </ul>
+                            <ul>
+                                 2. LAYANAN SIRKULASI
+                            <li>  Setiap anggota perpustakaan berhak meminjam buku sebanyak 2 eksemplar dengan jangka waktu 1(satu) minggu </li>
+                            <li>Perpanjangan waktu pinjam harus bawa buku dengan jangka waktu 1 kali selama 1 (satu) minggu</li>
+                            </ul>
+                        </div>
+                        <div class="single_wrap">
+                            <h4>III. PELANGGARAN DAN SANKSI</h4>
+                            <p>Anggota/pengunjung perpustakaan yang terbukti melanggar peraturan dan tata tertib yang berlaku akan di kenakan sanksi berupa teguran lisan, Teguran tertulis,skorsing peminjaman, di keluarkan dari keanggotaan perpustakaan <br><br>
+
+                            Berikut ini jenis pelanggaran ;</p>
+                            <ul>
+                                <p>1. Anggota/pengunjung yang merusak,menghilangkan, atau mencoret-coret bahan pustaka, harus mengganti dengan buku baru yang sama</p> 
+                                <p>2. Anggota/pengunjung perpustakaan yang terlambat mengembalikan buku-buku (sirkulasi) peminjaman akan di kenakan denda sebesar 500 per hari per buku</p>
+
+                            </ul>
+                        </div>
+                    
                     </div>
+                    
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_latest_blog">
-                        <div class="thumb">
-                            <img src="img/latest_blog/1.png" alt="">
+                <div class="col-lg-4">
+                    <div class="job_sumary">
+                        <div class="summery_header">
+                            <h3>Job Summery</h3>
                         </div>
-                        <div class="content_blog">
-                            <div class="date">
-                                <p>12 Jun, 2019 in <a href="#">Design tips</a></p>
-                            </div>
-                            <div class="blog_meta">
-                                <h3><a href="#">Commitment to dedicated Support</a></h3>
-                            </div>
-                            <p class="blog_text">
-                                Firmament morning sixth subdue darkness creeping gathered divide.
-                            </p>
+                        <div class="job_content">
+                            <ul>
+                                <li>Published on: <span>12 Nov, 2019</span></li>
+                                <li>Vacancy: <span>2 Position</span></li>
+                                <li>Salary: <span>50k - 120k/y</span></li>
+                                <li>Location: <span>California, USA</span></li>
+                                <li>Job Nature: <span> Full-time</span></li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_latest_blog">
-                        <div class="thumb">
-                            <img src="img/latest_blog/2.png" alt="">
-                        </div>
-                        <div class="content_blog">
-                            <div class="date">
-                                <p>12 Jun, 2019 in <a href="#">Design tips</a></p>
-                            </div>
-                            <div class="blog_meta">
-                                <h3><a href="#">Commitment to dedicated Support</a></h3>
-                            </div>
-                            <p class="blog_text">
-                                Firmament morning sixth subdue darkness creeping gathered divide.
-                            </p>
-                        </div>
+                    <div class="share_wrap d-flex">
+                        <span>Share at:</span>
+                        <ul>
+                            <li><a href="#"> <i class="fa fa-facebook"></i></a> </li>
+                            <li><a href="#"> <i class="fa fa-google-plus"></i></a> </li>
+                            <li><a href="#"> <i class="fa fa-twitter"></i></a> </li>
+                            <li><a href="#"> <i class="fa fa-envelope"></i></a> </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="col-xl-4 col-md-4">
-                    <div class="single_latest_blog">
-                        <div class="thumb">
-                            <img src="img/latest_blog/3.png" alt="">
-                        </div>
-                        <div class="content_blog">
-                            <div class="date">
-                                <p>12 Jun, 2019 in <a href="#">Design tips</a></p>
-                            </div>
-                            <div class="blog_meta">
-                                <h3><a href="#">Commitment to dedicated Support</a></h3>
-                            </div>
-                            <p class="blog_text">
-                                Firmament morning sixth subdue darkness creeping gathered divide.
-                            </p>
-                        </div>
+                    <div class="job_location_wrap">
+                        <div class="job_lok_inner">
+                            <div id="map" style="height: 200px;"></div>
+                            <script>
+                              function initMap() {
+                                var uluru = {lat: -25.363, lng: 131.044};
+                                var grayStyles = [
+                                  {
+                                    featureType: "all",
+                                    stylers: [
+                                      { saturation: -90 },
+                                      { lightness: 50 }
+                                    ]
+                                  },
+                                  {elementType: 'labels.text.fill', stylers: [{color: '#ccdee9'}]}
+                                ];
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                  center: {lat: -31.197, lng: 150.744},
+                                  zoom: 9,
+                                  styles: grayStyles,
+                                  scrollwheel:  false
+                                });
+                              }
+                              
+                            </script>
+                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>
+                            
+                          </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- our_latest_blog_end -->

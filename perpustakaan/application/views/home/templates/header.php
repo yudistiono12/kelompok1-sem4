@@ -43,7 +43,7 @@
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="<?= base_url('home/index/'); ?>">
-                                        <img src="<?= base_url('assets/homee/'); ?>img/polijelogo.png" alt="">
+                                        <img src="<?= base_url('assets/homee/'); ?>img/polibon.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -51,16 +51,10 @@
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a href="<?= base_url('home/index'); ?>">home</a></li>
-                                            <li><a href="<?= base_url('assets/homee/'); ?>jobs.html">Browse Job</a></li>
-                                            <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="<?= base_url('assets/homee/'); ?>candidate.html">Candidates </a></li>
-                                                    <li><a href="<?= base_url('assets/homee/'); ?>job_details.html">job details </a></li>
-                                                    <li><a href="<?= base_url('assets/homee/'); ?>elements.html">elements</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                                            <li><a href="<?= base_url('home/index'); ?>">HOME</a></li>
+                                            <li><a href="<?= base_url('home/profil/'); ?>">PROFIL</a></li>
+                                            <li><a href="<?= base_url('home/rules/'); ?>">TATA TERTIB</a></li>
+                                            <li><a href="#">Katalog<i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
                                                     <li><a href="<?= base_url('assets/homee/'); ?>blog.html">blog</a></li>
                                                     <li><a href="<?= base_url('assets/homee/'); ?>single-blog.html">single-blog</a></li>

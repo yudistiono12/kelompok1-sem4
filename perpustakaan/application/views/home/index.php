@@ -480,7 +480,7 @@
                         <div class="thumb">
                             <img src="<?= base_url('assets/homee/'); ?>img/svg_icon/4.svg" alt="">
                         </div>
-                        <a href="jobs.html"><h3>Portal E-Book</h3></a>
+                        <a href="https://bc.vitalsource.com/tenants/state_polytechnic_jember/libraries?bookmeta_vbid=VBID"><h3>Portal E-Book</h3></a>
                         <p> E-Book Gallery Portal By VitalSource</p>
                     </div>
                 </div>
