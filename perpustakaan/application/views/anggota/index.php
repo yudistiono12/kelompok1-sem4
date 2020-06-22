@@ -134,7 +134,7 @@
                                 </li>
                                 <li>
                                     <p>
-                                        <strong>Mac</strong> <span class="pull-right small muted">56%</span>
+                                        <strong>Mac</strong> <span class="pull-right small muted">80%</span>
                                     </p>
                                     <div class="progress tight">
                                         <div class="bar bar-success" style="width: 56%;">
