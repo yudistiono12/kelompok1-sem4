@@ -21,7 +21,7 @@
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="thumb">
-                                    <img src="img/svg_icon/1.svg" alt="">
+                                    <img src="<?= base_url('assets/homee/'); ?>img/svg_icon/1.svg" alt="">
                                 </div>
                                 <div class="jobs_conetent">
                                     <a href="#"><h4>Tata Tertib</h4></a>
@@ -90,15 +90,14 @@
                 <div class="col-lg-4">
                     <div class="job_sumary">
                         <div class="summery_header">
-                            <h3>Job Summery</h3>
+                            <h3>Layanan</h3>
                         </div>
                         <div class="job_content">
                             <ul>
-                                <li>Published on: <span>12 Nov, 2019</span></li>
-                                <li>Vacancy: <span>2 Position</span></li>
-                                <li>Salary: <span>50k - 120k/y</span></li>
-                                <li>Location: <span>California, USA</span></li>
-                                <li>Job Nature: <span> Full-time</span></li>
+                                <li><a href="">jam pelayanan</a></li>
+                                <li><a href="">Keanggotaan</a></li>
+                                <li><a href="">Sirkulasi</a></li>
+                                <li><a href="">Katalog</a></li>
                             </ul>
                         </div>
                     </div>

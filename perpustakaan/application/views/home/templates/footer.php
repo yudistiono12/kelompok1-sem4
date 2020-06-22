@@ -7,7 +7,7 @@
                         <div class="footer_widget wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                             <div class="footer_logo">
                                 <a href="#">
-                                    <img src="<?= base_url('assets/homee/'); ?>img/logo.png" alt="">
+                                    <img src="<?= base_url('assets/homee/'); ?>img/rsz_hmm.png" alt="">
                                 </a>
                             </div>
                             <p>
@@ -16,7 +16,7 @@
                             <div class="socail_links">
                                 <ul>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://www.facebook.com/poltekjember/">
                                             <i class="ti-facebook"></i>
                                         </a>
                                     </li>
@@ -26,7 +26,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://twitter.com/polije_sip">
                                             <i class="fa fa-twitter"></i>
                                         </a>
                                     </li>

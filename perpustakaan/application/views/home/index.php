@@ -24,124 +24,61 @@
     </div>
     <!-- slider_area_end -->
 
-    <!-- catagory_area -->
-    <div class="catagory_area">
+   
+    <div class="top_companies_area">
         <div class="container">
-            <div class="row cat_search">
-                <div class="col-lg-3 col-md-4">
-                    <div class="single_input">
-                        <input type="text" placeholder="Search keyword">
+            <div class="row align-items-center mb-40">
+                <div class="col-lg-6 col-md-6">
+                    <div class="section_title">
+                        <h3></h3>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="single_input">
-                        <select class="wide" >
-                            <option data-display="Location">Location</option>
-                            <option value="1">Dhaka</option>
-                            <option value="2">Rangpur</option>
-                            <option value="4">Sylet</option>
-                          </select>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="single_input">
-                        <select class="wide">
-                            <option data-display="Category">Category</option>
-                            <option value="1">Category 1</option>
-                            <option value="2">Category 2</option>
-                            <option value="4">Category 3</option>
-                          </select>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-12">
-                    <div class="job_btn">
-                        <a href="#" class="boxed-btn3">Find Job</a>
-                    </div>
-                </div>
+                
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="popular_search d-flex align-items-center">
-                        <span>Popular Search:</span>
-                        <ul>
-                            <li><a href="#">Design & Creative</a></li>
-                            <li><a href="#">Marketing</a></li>
-                            <li><a href="#">Administration</a></li>
-                            <li><a href="#">Teaching & Education</a></li>
-                            <li><a href="#">Engineering</a></li>
-                            <li><a href="#">Software & Web</a></li>
-                            <li><a href="#">Telemarketing</a></li>
-                        </ul>
+                <div class="col-lg-4 col-xl-3 col-md-6">
+                    <div class="single_company">
+                        <div class="thumb">
+                            <img src="<?= base_url('assets/homee/'); ?>img/svg_icon/5.svg" alt="">
+                        </div>
+                        <a href="https://www.tandfonline.com/"><h3>Portal E- journal</h3></a>
+                        <p>E-Journal Gallery Portal By Taylor & Francis Group</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-3 col-md-6">
+                    <div class="single_company">
+                        <div class="thumb">
+                            <img src="<?= base_url('assets/homee/'); ?>img/svg_icon/4.svg" alt="">
+                        </div>
+                        <a href="https://bc.vitalsource.com/tenants/state_polytechnic_jember/libraries?bookmeta_vbid=VBID"><h3>Portal E-Book</h3></a>
+                        <p> E-Book Gallery Portal By VitalSource</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-3 col-md-6">
+                    <div class="single_company">
+                        <div class="thumb">
+                            <img src="<?= base_url('assets/homee/'); ?>img/svg_icon/3.svg" alt="">
+                        </div>
+                        <a href="http://e-library.polije.ac.id/"><h3> Katalog Buku</h3></a>
+                        <p>Portal Katalog Buku Perpustakaan POLIJE</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-3 col-md-6">
+                    <div class="single_company">
+                        <div class="thumb">
+                            <img src="<?= base_url('assets/homee/'); ?>img/svg_icon/1.svg" alt="">
+                        </div>
+                        <a href="http://perpustakaan.polije.ac.id:81"><h3>E- Library Portal</h3></a>
+                        <p> E-Library Portal Politeknik Negeri Jember</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--/ catagory_area -->
 
-    <!-- popular_catagory_area_start  -->
-    <div class="popular_catagory_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section_title mb-40">
-                        <h3>Kategori Buku Terpopuler</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_catagory">
-                        <a href="jobs.html"><h4>Design & Creative</h4></a>
-                        <p> <span>50</span> Available position</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_catagory">
-                        <a href="jobs.html"><h4>Marketing</h4></a>
-                        <p> <span>50</span> Available position</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_catagory">
-                        <a href="jobs.html"><h4>Telemarketing</h4></a>
-                        <p> <span>50</span> Available position</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_catagory">
-                        <a href="jobs.html"><h4>Software & Web</h4></a>
-                        <p> <span>50</span> Available position</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_catagory">
-                        <a href="jobs.html"><h4>Administration</h4></a>
-                        <p> <span>50</span> Available position</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_catagory">
-                        <a href="jobs.html"><h4>Teaching & Education</h4></a>
-                        <p> <span>50</span> Available position</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_catagory">
-                        <a href="jobs.html"><h4>Engineering</h4></a>
-                        <p> <span>50</span> Available position</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_catagory">
-                        <a href="jobs.html"><h4>Garments / Textile</h4></a>
-                        <p> <span>50</span> Available position</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- popular_catagory_area_end  -->
+   
+
+ 
 
     <!-- job_listing_area_start  -->
     <div class="job_listing_area">
@@ -149,14 +86,11 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="section_title">
-                        <h3>Judul Buku Terpopuler</h3>
+                        <br>
+                        <h3>Kategori Buku </h3>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="brouse_job text-right">
-                        <a href="jobs.html" class="boxed-btn4">Browse More Job</a>
-                    </div>
-                </div>
+               
             </div>
             <div class="job_lists">
                 <div class="row">
@@ -450,63 +384,7 @@
         </div>
     </div>
     <!-- featured_candidates_area_end  -->
-
-    <div class="top_companies_area">
-        <div class="container">
-            <div class="row align-items-center mb-40">
-                <div class="col-lg-6 col-md-6">
-                    <div class="section_title">
-                        <h3></h3>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="brouse_job text-right">
-                        <a href="jobs.html" class="boxed-btn4">Browse More Job</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_company">
-                        <div class="thumb">
-                            <img src="<?= base_url('assets/homee/'); ?>img/svg_icon/5.svg" alt="">
-                        </div>
-                        <a href="https://www.tandfonline.com/"><h3>Portal E- journal</h3></a>
-                        <p>E-Journal Gallery Portal By Taylor & Francis Group</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_company">
-                        <div class="thumb">
-                            <img src="<?= base_url('assets/homee/'); ?>img/svg_icon/4.svg" alt="">
-                        </div>
-                        <a href="https://bc.vitalsource.com/tenants/state_polytechnic_jember/libraries?bookmeta_vbid=VBID"><h3>Portal E-Book</h3></a>
-                        <p> E-Book Gallery Portal By VitalSource</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_company">
-                        <div class="thumb">
-                            <img src="<?= base_url('assets/homee/'); ?>img/svg_icon/3.svg" alt="">
-                        </div>
-                        <a href="http://e-library.polije.ac.id/"><h3> Katalog Buku</h3></a>
-                        <p>Portal Katalog Buku Perpustakaan POLIJE</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_company">
-                        <div class="thumb">
-                            <img src="<?= base_url('assets/homee/'); ?>img/svg_icon/1.svg" alt="">
-                        </div>
-                        <a href="http://perpustakaan.polije.ac.id:81"><h3>E- Library Portal</h3></a>
-                        <p> E-Library Portal Politeknik Negeri Jember</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- job_searcing_wrap  -->
+ <!-- job_searcing_wrap  -->
     <div class="job_searcing_wrap overlay">
         <div class="container">
             <div class="row">

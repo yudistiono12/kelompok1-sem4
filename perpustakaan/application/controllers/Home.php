@@ -28,6 +28,20 @@ class Home extends CI_Controller
 		$this->load->view('home/templates/footer');
 	}
 
+	public function staff()
+	{
+		$data['title'] = 'staff';
+		$this->load->view('home/templates/header');
+		$this->load->view('home/staff');
+		$this->load->view('home/templates/footer');
+	}
+public function panduan()
+	{
+		$data['title'] = 'panduan';
+		$this->load->view('home/templates/header');
+		$this->load->view('home/panduan');
+		$this->load->view('home/templates/footer');
+	}
 	public function login()
 	{
 		// if ($this->session->userdata('')) {

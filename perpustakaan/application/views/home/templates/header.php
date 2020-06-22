@@ -43,7 +43,7 @@
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="<?= base_url('home/index/'); ?>">
-                                        <img src="<?= base_url('assets/homee/'); ?>img/polibon.png" alt="">
+                                        <img src="<?= base_url('assets/homee/'); ?>img/rsz_1hmm.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -52,15 +52,21 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a href="<?= base_url('home/index'); ?>">HOME</a></li>
-                                            <li><a href="<?= base_url('home/profil/'); ?>">PROFIL</a></li>
+                                            <li><a href="#">PROFIL<i class="ti-angle-down"></i></a>
+                                               <ul class="submenu">
+                                                    <li><a href="<?= base_url('home/profil/'); ?>">Sekilas Perpustakaan Polije</a></li>
+                                                    <li><a href="<?= base_url('home/staff/'); ?>">Staff Perpustakaan</a></li>
+                                                </ul> 
+                                            </li>
                                             <li><a href="<?= base_url('home/rules/'); ?>">TATA TERTIB</a></li>
-                                            <li><a href="#">Katalog<i class="ti-angle-down"></i></a>
+                                            <li><a href="#">KATALOG<i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="<?= base_url('assets/homee/'); ?>blog.html">blog</a></li>
-                                                    <li><a href="<?= base_url('assets/homee/'); ?>single-blog.html">single-blog</a></li>
+                                                    <li><a href="#">Teknik Informatika</a></li>
+                                                    <li><a href="#">Management Agribisnis</a></li>
+                                                    <li><a href="#">Teknologi Industri Pangan</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="<?= base_url('assets/homee/'); ?>contact.html">Contact</a></li>
+                                            <li><a href="<?= base_url('home/panduan/');?> ">PANDUAN</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -68,11 +74,14 @@
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
                                     <div class="phone_num d-none d-xl-block">
-                                        <a href="<?=base_url('home/login/'); ?>">Log in</a>
+                                        <a href="<?=base_url('home/login/'); ?>">Masuk</a>
                                     </div>
-                                    <div class="d-none d-lg-block">
+                                     <div class="phone_num d-none d-xl-block">
+                                        <a href="<?=base_url('home/login/'); ?>"> Mendaftar</a>
+                                    </div>
+                                    <!-- <div class="d-none d-lg-block">
                                         <a class="boxed-btn3" href="#">Post a Job</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="col-12">
