@@ -17,94 +17,80 @@
 
     <!-- Sidebar Menu -->
     <ul class="sidebar-menu">
-      <li class="header">LIST MENU</li>
-      <!-- Optionally, you can add icons to the links -->
-
-      <li <?php if ($page == 'dashboard') {echo 'class="active"';} ?>>
-        <a href="<?= base_url('admin/Dashboard'); ?>">
-          <i class="fa fa-home"></i>
-          <span>Dashboard</span>
+      <li class="header">Master Data</li>
+      <li <?php if ($page == 'masteranggota') {echo 'class="treeview active"';} ?>>
+        <a>
+          <i class="fa fa-users"></i>
+          <span>Master Anggota</span>
+          <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
         </a>
+        <ul class="treeview-menu">
+          <li <?php if ($pagae == 'datamahasiswa') {echo 'class="active"';} ?>>
+            <a href="<?= base_url('admin/masteranggota/datamahasiswa'); ?>">
+              <i class="fa fa-user"></i>Data Mahasiswa
+            </a>
+          </li>
+          <li <?php if ($pagae == 'datadosen') {echo 'class="active"';} ?>>
+            <a href="<?= base_url('admin/masteranggota/datadosen'); ?>">
+              <i class="fa fa-user"></i>Data Dosen
+            </a>
+          </li>
+          <li <?php if ($pagae == 'dataprodi') {echo 'class="active"';} ?>>
+            <a href="<?= base_url('admin/masteranggota/dataprodi'); ?>">
+              <i class="fa fa-moon-o"></i>Data prodi
+            </a>
+          </li>
+        </ul>
       </li>
-      
-      <li <?php if ($page == 'master') {echo 'class="treeview active"';} ?>>
+
+      <li <?php if ($page == 'masterbuku') {echo 'class="treeview active"';} ?>>
         <a>
           <i class="fa fa-book"></i>
-          <span>Koleksi Buku</span>
+          <span>Master Buku</span>
           <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
         </a>
         <ul class="treeview-menu">
-          <li <?php if ($pagae == 'literasi') {echo 'class="active"';} ?>>
-            <a href="<?= base_url('admin/master/literasi'); ?>">
-              <i class="fa fa-circle-o"></i>Buku Literasi Umum
+          <li <?php if ($pagae == 'databuku') {echo 'class="active"';} ?>>
+            <a href="<?= base_url('admin/masterbuku/databuku'); ?>">
+              <i class="fa fa-book"></i>Data Buku
             </a>
           </li>
-          <li <?php if ($pagae == 'mapel') {echo 'class="active"';} ?>>
-            <a href="<?= base_url('admin/master/mapel'); ?>">
-              <i class="fa fa-circle-o"></i>Buku Mapel Kelas
+          <li <?php if ($pagae == 'datakategori') {echo 'class="active"';} ?>>
+            <a href="<?= base_url('admin/masterbuku/datakategori'); ?>">
+              <i class="fa fa-tags"></i>Data kategori
             </a>
           </li>
-          <li <?php if ($pagae == 'tahunan') {echo 'class="active"';} ?>>
-            <a href="<?= base_url('admin/master/tahunan'); ?>"><i class="fa fa-circle-o"></i>Buku Tahunan Siswa
+          <li <?php if ($pagae == 'datapenerbit') {echo 'class="active"';} ?>>
+            <a href="<?= base_url('admin/masterbuku/datapenerbit'); ?>">
+              <i class="fa fa-user-secret"></i>Data Penerbit
+            </a>
+          </li>
+          <li <?php if ($pagae == 'datapengarang') {echo 'class="active"';} ?>>
+            <a href="<?= base_url('admin/masterbuku/datapengarang'); ?>">
+              <i class="fa fa-pencil-square-o"></i>Data Pengarang
             </a>
           </li>
         </ul>
       </li>
 
-      <li <?php if ($page == 'peminjaman') {echo 'class="treeview active"';} ?>>
-        <a>
+      <li class="header">Transaksi</li>
+      <li <?php if ($page == 'peminjaman') {echo 'class="active"';} ?>>
+        <a href="<?= base_url('admin/peminjaman'); ?>">
           <i class="fa fa-briefcase"></i>
           <span>Peminjaman</span>
-          <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
         </a>
-        <ul class="treeview-menu">
-          <li <?php if ($pagae == 'pem-literasi') {echo 'class="active"';} ?>>
-            <a href="<?= base_url('admin/peminjaman/literasi'); ?>">
-              <i class="fa fa-circle-o"></i>Buku Literasi Umum
-            </a>
-          </li>
-          <li <?php if ($pagae == 'pem-mapel') {echo 'class="active"';} ?>>
-            <a href="<?= base_url('admin/peminjaman/mapel'); ?>">
-              <i class="fa fa-circle-o"></i>Buku Mapel Kelas
-            </a>
-          </li>
-          <li <?php if ($pagae == 'pem-tahunan') {echo 'class="active"';} ?>>
-            <a href="<?= base_url('admin/peminjaman/tahunan'); ?>"><i class="fa fa-circle-o"></i>Buku Tahunan Siswa
-            </a>
-          </li>
-        </ul>
       </li>
-      
-      <li <?php if ($page == 'pengembalian') {echo 'class="treeview active"';} ?>>
-        <a>
+      <li <?php if ($page == 'pengembalian') {echo 'class="active"';} ?>>
+        <a href="<?= base_url('admin/pengembalian'); ?>">
           <i class="fa fa-location-arrow"></i>
           <span>Pengembalian</span>
-          <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
         </a>
-        <ul class="treeview-menu">
-          <li <?php if ($pagae == 'pen-literasi') {echo 'class="active"';} ?>>
-            <a href="<?= base_url('admin/pengembalian/literasi'); ?>">
-              <i class="fa fa-circle-o"></i>Buku Literasi Umum
-            </a>
-          </li>
-          <li <?php if ($pagae == 'pen-mapel') {echo 'class="active"';} ?>>
-            <a href="<?= base_url('admin/pengembalian/mapel'); ?>">
-              <i class="fa fa-circle-o"></i>Buku Mapel Kelas
-            </a>
-          </li>
-          <li <?php if ($pagae == 'pen-tahunan') {echo 'class="active"';} ?>>
-            <a href="<?= base_url('admin/pengembalian/tahunan'); ?>"><i class="fa fa-circle-o"></i>Buku Tahunan Siswa
-            </a>
-          </li>
-        </ul>
       </li>
-
+            
       <li <?php if ($page == 'laporan') {echo 'class="treeview active"';} ?>>
         <a>
           <i class="fa fa-location-arrow"></i>

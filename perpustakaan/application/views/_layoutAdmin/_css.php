@@ -6,3 +6,5 @@
 <link rel="stylesheet" href="<?= base_url(); ?>assets/admin/plugins/select2/select2.min.css">
 <link rel="stylesheet" href="<?= base_url(); ?>assets/admin/plugins/iCheck/all.css">
 <link rel="stylesheet" href="<?= base_url(); ?>assets/admin/plugins/datatables/dataTables.bootstrap.css">
+
+
