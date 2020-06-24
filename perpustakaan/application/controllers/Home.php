@@ -42,6 +42,29 @@ public function panduan()
 		$this->load->view('home/panduan');
 		$this->load->view('home/templates/footer');
 	}
+
+public function panduan_klks()
+	{
+		$data['title'] = 'panduan';
+		$this->load->view('home/templates/header');
+		$this->load->view('home/panduan_koleksi');
+		$this->load->view('home/templates/footer');
+	}
+public function jam_layanan()
+	{
+		$data['title'] = 'panduan';
+		$this->load->view('home/templates/header');
+		$this->load->view('home/jamlayanan');
+		$this->load->view('home/templates/footer');
+	}
+
+public function Panduan_sirkulasi()
+	{
+		$data['title'] = 'panduan';
+		$this->load->view('home/templates/header');
+		$this->load->view('home/panduansirkulasi');
+		$this->load->view('home/templates/footer');
+	}
 	public function login()
 	{
 		// if ($this->session->userdata('')) {

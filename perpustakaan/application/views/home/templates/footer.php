@@ -46,8 +46,8 @@
                                 Layanan
                             </h3>
                             <ul>
-                                <li><a href="#">Jam Pelayanan </a></li>
-                                <li><a href="#">Keanggotaan</a></li>
+                                <li><a href="<?= base_url('home/jam_layanan/');?>">Jam Pelayanan </a></li>
+                                <li><a href="<?= base_url('home/panduan/');?>">Keanggotaan</a></li>
                                 <li><a href="#">Sirkulasi</a></li>
                                 <li><a href="#">FAQ</a></li>
                             </ul>

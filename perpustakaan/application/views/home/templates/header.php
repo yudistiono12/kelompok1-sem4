@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Job Board</title>
+    <title>Prps POLIJE Bondowoso-Perpustakaan</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets/homee/'); ?>img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets/homee/'); ?>img/polibon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -66,7 +66,13 @@
                                                     <li><a href="#">Teknologi Industri Pangan</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="<?= base_url('home/panduan/');?> ">PANDUAN</a></li>
+                                            <li><a href="#">PANDUAN<i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="<?= base_url('home/panduan/');?>">Panduan Keanggotaan</a></li>
+                                                    <li><a href="<?= base_url('home/panduan_klks/');?>">Panduan Koleksi</a></li>
+                                                    <li><a href="<?= base_url('home/panduan_sirkulasi/');?>">Panduan Layanan Sirkulasi</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </div>

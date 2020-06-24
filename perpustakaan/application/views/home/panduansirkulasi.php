@@ -4,7 +4,7 @@
           <div class="row">
               <div class="col-xl-12">
                   <div class="bradcam_text">
-                      <h3>Panduan Keangotaan</h3>
+                      <h3>Panduan Layanan Sirkulasi </h3>
                   </div>
               </div>
           </div>
@@ -22,70 +22,32 @@
                      <img class="img-fluid" src="img/blog/single_blog_1.png" alt="">
                   </div>
                   <div class="blog_details">
-                     <h2>Aturan Umum Keanggotaan
+                     <h2>PELAYANAN SIRKULASI
                      </h2>
                      <p class="excert">
-                        1. Etika Pengunjung <br>
-                        2. Kewajiban Pengunjung <br>
-                        3. Syarat keanggotaan <br>
-                        4. Hak Anggota <br>
+                     Jasa layanan sirkulasi terdiri dari jasa peminjaman, perpanjangan dan pengembalian bahan pustaka (buku), serta pemesanan buku yang sedang dalam peminjaman.
+
+                     Jasa layanan ini telah menggunakan sarana komputer, dan masing-masing koleksi buku telah dilengkapi dengan barcode sehingga memudahkan identifikasi , kecepatan dan ketepatan pada proses transaksi di sirkulasi. Pemanfaatan teknologi komputer juga diterapkan untuk penyebarluasan informasi buku, sehingga data buku paling baru dapat secara langsung diakses terminal komputer yang telah tersedia di perpustakaan melalui OPAC.
                      </p>
                      <h2>
-                        Etika Pengunjung/ Pemustaka di Perpustakaan Polije Bondowoso
+                        Ketentuan Layanan Sirkulasi
                      </h2>
                      <div class="quote-wrapper">
                         <div class="quotes">
-                       1.Mengenakan pakaian yang rapi sopan (tidak diperkenankan menggunakan celana pendek, kaos oblong, dan sandal jepit) <br>
-                       2. Menempatkan tas/barang bawaan ke locker saat masuk di ruang layanan tertentu
-                       <br>
-                       3. Tidak memotret naskah koleksi yang dilayankan dengan akses terbatas (skripsi/tesis/disertasi dan koleksi langka) <br>
-                       4.Tidak menggunakan robot/crawler atau alat pengunduh konten sistematis lainnya dalam mengunduh konten data/database online yang disediakan oleh perpustakaan <br>
-                       5. Selalu menjaga ketenangan dan ketertiban.
+                       Mahasiswa D3/ : <br>
+2 (dua) eksemplar buku untuk jangka peminjaman 1 (satu) minggu, dan dapat diperpanjang 1 (Satu) kali <br>
+
+Mahasiswa D4  : <br>
+yang sedang menyusun tugas akhir atau mahasiswa D3 yang sedang menyusun PKL/MKI : 2(DUA) eksemplar buku untuk jangka waktu 2 (dua) minggu dan diperpanjang 1 (satu) kali dengan syarat buku tersebut tidak sedang dalam daftar peminjaman. <br>
+
+Mahasiswa S2 : <br>
+2(dua) eksemplar buku untuk jangka waktu 1 (satu) minggu dan diperpanjang 1(satu) kali dengan syarat buku tersebut tidak sedang dalam daftar peminjaman. <br>
+
+Buku yang dapat dipinjam hanya yang berlabel hitam , sedangkan buku berlabel merah tidak dapat dipinjam, dan hanya boleh dibaca serta difotokopi di perpustakaan. Pengecualian peminjaman buku berlabel merah ini, bila ada izin dari pimpinan perpustakaan.
                         </div>
                      </div>
-                     <h2> 
-                        Kewajiban Anggota/Pengunjung Perpustakaan:
-                     </h2>
-                     <p>
-                        1. Mentaati peraturan Perpustakaan UGM yang berlaku <br> 
-                        2. Mengisi presensi kehadiran di Perpustakaan Polije Bondowoso setiap berkunjung langsung ke perpustakaan. <br>
-                        3. Bertanggungjawab atas koleksi yang rusak/hilang saat peminjaman dan menerima sanksi yang berlaku. <br>
-                        4. Menjaga keamanan fasilitas yang disediakan perpustakaan <br>
-                        5. Makan dan minum di ruang-ruang tertentu yang diijinkan.
-                     </p>
-                     <h2>
-                        A. Keanggotaan bagi Civitas Academica 
-
-                     </h2>
-                     <p>
-                        Keanggotaan perpustakaan terbuka bagi civitas academica Polije Bondowoso . Aktivasi keanggotaan dapat dilakukan dengan : <br>
-
-                        1.Mengisi From registrasi anggota sesuai dengan ID Card Mahasiswa <br>
-                        2.Mengisi From registrasi anggota sesuai dengan Kartu Pegawai Polije Bondowoso
-
-                     </p>
-                      <h2>
-                        Syarat Keanggotaan
-
-                     </h2>
-                     <p>
-                        1. Menunjukkan Kartu Mahasiswa (KTM) yang masih berlaku dan/atau Kartu Pegawai (Karpeg) <br> 
-                        2. Keanggotaan berlaku selama masa studi aktif.
-
-                     </p>
-
-                     <h2>
-                        Hak Anggota Perpustakaan 
-                     </h2>
-                     <div class="quote-wrapper">
-                        <div class="quotes">
-                      1. Meminjam koleksi buku teks sirkulasi sebanyak maksimal 3 eksemplar. <br>
-                      2. Memanfaatkan koleksi referensi, audiovisual, terbitan berkala, tesis dan disertasi, di ruang masing-masing (menggunakan di tempat) <br>
-                      3. Mendapatkan asistensi dari pustakawan dalam penelusuran informasi dan koleksi di Perpustakaan <br>
-                      4. Memanfaatkan akses WiFi dan internet <br>
-                      5. Memanfaatkan Fasilitas Perpustakaan . 
-                        </div>
-                     </div>
+                     
+                     
                   </div>
                </div>
                <div class="navigation-top">
