@@ -168,12 +168,186 @@
                             <h3>
                                 Profit Chart</h3>
                         </div>
-                        <div class="module-body">
-                            <div class="chart inline-legend grid">
-                                <div id="placeholder2" class="graph" style="height: 500px">
+                        <!DOCTYPE html>
+                        <html lang="en">
+
+                        <head>
+                            <meta charset="utf-8">
+                            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                            <meta name="viewport" content="width=device-width, initial-scale=1">
+                            <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+                            <title>Bootstrap 101 Template</title>
+
+                            <!-- Bootstrap -->
+                            <link href="<?php echo base_url() ?>css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+                            <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+                            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                            <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+                        </head>
+
+                        <body>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h1>Article</h1>
+                                        <table cellspacing="0" border="1" width="1000px">
+                                            <thead>
+                                                <th>Judul</th>
+                                                <th>Descripsi</th>
+                                                <th>Tanggal</th>
+                                                <th>aksi</th>
+                                            </thead>
+                                            <tbody>
+                                                <?php foreach ($article->result() as $result) : ?>
+                                                    <tr>
+                                                        <td><?php echo $result->title ?></td>
+                                                        <td><?php echo $result->deskripsi ?></td>
+                                                        <td><?php echo $result->date ?></td>
+                                                        <td><a href="<?php echo site_url('article/update/' . $result->id) ?>">Update</a>&nbsp;<a onclick="return confirm('apakah anda yakin ingin menghapus data tersebut ?')" href="<?php echo site_url('article/delete/' . $result->id) ?>">Delete</a></td>
+                                                    </tr>
+                                                <?php endforeach; ?>
+                                            </tbody>
+                                        </table>
+                                        <br />
+                                        <a href="<?php echo base_url() ?>index.php/article/addDAta" class="btn btn-primary">Tambah Data</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+
+
+
+
+                            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                            <!-- Include all compiled plugins (below), or include individual files as needed -->
+                            <script src="<?php echo base_url() ?>css/bootstrap/js/bootstrap.min.js"></script>
+                        </body>
+
+                        </html>
+                        1
+                        2
+                        3
+                        4
+                        5
+                        6
+                        7
+                        8
+                        9
+                        10
+                        11
+                        12
+                        13
+                        14
+                        15
+                        16
+                        17
+                        18
+                        19
+                        20
+                        21
+                        22
+                        23
+                        24
+                        25
+                        26
+                        27
+                        28
+                        29
+                        30
+                        31
+                        32
+                        33
+                        34
+                        35
+                        36
+                        37
+                        38
+                        39
+                        40
+                        41
+                        42
+                        43
+                        44
+                        45
+                        46
+                        47
+                        48
+                        49
+                        50
+                        51
+                        52
+                        53
+                        54
+                        55
+                        56
+                        57
+                        58
+                        <!DOCTYPE html>
+                        <html lang="en">
+
+                        <head>
+                            <meta charset="utf-8">
+                            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                            <meta name="viewport" content="width=device-width, initial-scale=1">
+                            <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+                            <title>Bootstrap 101 Template</title>
+
+                            <!-- Bootstrap -->
+                            <link href="<?php echo base_url() ?>css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+                            <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+                            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                            <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+                        </head>
+
+                        <body>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h1>Article</h1>
+                                        <table cellspacing="0" border="1" width="1000px">
+                                            <thead>
+                                                <th>nim</th>
+                                                <th>nama</th>
+                                                <th>prodi</th>
+                                                <th>no tlp</th>
+                                            </thead>
+                                            <tbody>
+                                                <?php foreach ($article->result() as $result) : ?>
+                                                    <tr>
+                                                        <td><?php echo $result->title ?></td>
+                                                        <td><?php echo $result->deskripsi ?></td>
+                                                        <td><?php echo $result->date ?></td>
+                                                        <td><a href="<?php echo site_url('article/update/' . $result->id) ?>">Update</a>&nbsp;<a onclick="return confirm('apakah anda yakin ingin menghapus data tersebut ?')" href="<?php echo site_url('article/delete/' . $result->id) ?>">Delete</a></td>
+                                                    </tr>
+                                                <?php endforeach; ?>
+                                            </tbody>
+                                        </table>
+                                        <br />
+                                        <a href="<?php echo base_url() ?>index.php/article/addDAta" class="btn btn-primary">Tambah Data</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                            <!-- Include all compiled plugins (below), or include individual files as needed -->
+                            <script src="<?php echo base_url() ?>css/bootstrap/js/bootstrap.min.js"></script>
+                        </body>
+
+                        </html>
                     </div>
                     <!--/.module-->
                     <div class="module hide">

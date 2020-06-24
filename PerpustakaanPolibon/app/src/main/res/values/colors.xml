@@ -5,4 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorblack">#000000</color>
     <color name="colordarkred">#DC143C</color>
+    <color name="colorAmber_A400">#FFBF00</color>
+    <color name="colorAmber_900">#FFBF00</color>
+    <color name="colorGreen_A400">#FFBF00</color>
+    <color name="colorGreen_900">#FFBF00</color>
 </resources>
