@@ -1,18 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    tools:context="Login">
+    android:background="#85D8FF"
+    tools:context=".Tertib">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
-</RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="711dp"
+        android:layout_height="306dp"
+        android:background="#7BCCF1"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="602dp"
+            android:layout_height="149dp"
+            android:src="@drawable/logo"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="399dp"
+            android:layout_height="53dp"
+            android:fontFamily="sans-serif"
+            android:text="Perpustakaan Polibon"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            tools:layout_editor_absoluteX="181dp"
+            tools:layout_editor_absoluteY="187dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="712dp"
+        android:layout_height="484dp"
+        android:background="#60C3F1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="657dp">
+
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="264dp"
+            android:layout_height="109dp"
+            android:background="@drawable/costum_button"
+            android:text="Login"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="224dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:background="#00000000"
+            android:text="belum punya akun klik disini"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="205dp"
+            tools:layout_editor_absoluteY="229dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="706dp"
+        android:layout_height="355dp"
+        android:background="#64CBEA"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="305dp">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="444dp"
+            android:layout_height="67dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="username"
+            android:inputType="textPersonName"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="156dp"
+            tools:layout_editor_absoluteY="51dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:background="#00000000"
+            android:text="lupa password?"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="450dp"
+            tools:layout_editor_absoluteY="258dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="444dp"
+            android:layout_height="71dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="156dp"
+            tools:layout_editor_absoluteY="175dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="62dp"
+            android:layout_height="87dp"
+            android:src="@drawable/id_picture"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="40dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="61dp"
+            android:layout_height="69dp"
+            android:src="@drawable/password"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="177dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_menu_view"
+            tools:layout_editor_absoluteX="538dp"
+            tools:layout_editor_absoluteY="188dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
