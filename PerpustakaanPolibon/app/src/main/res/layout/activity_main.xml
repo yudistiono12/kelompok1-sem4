@@ -143,7 +143,8 @@
                 android:textColor="#fff"
                 android:background="@drawable/buttonstyle1"
                 android:text="Tata Tertib"
-                android:textAllCaps="false"/>
+                android:textAllCaps="false"
+                android:gravity="center_horizontal" />
 
             <Button
                 android:id="@+id/btnlogin"
@@ -155,7 +156,8 @@
                 android:textAllCaps="false"
                 android:textColor="@color/colorblack"
                 android:background="@drawable/buttonstyle2"
-                android:text="Login"/>
+                android:text="Login"
+                android:gravity="center_horizontal" />
 
         </LinearLayout>
 
