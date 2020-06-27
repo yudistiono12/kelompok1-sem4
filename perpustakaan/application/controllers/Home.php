@@ -65,6 +65,13 @@ public function Panduan_sirkulasi()
 		$this->load->view('home/panduansirkulasi');
 		$this->load->view('home/templates/footer');
 	}
+public function pendaftaran()
+	{
+		$data['title'] = 'registrasi';
+		$this->load->view('home/templates/header');
+		$this->load->view('registrasi/index');
+		$this->load->view('home/templates/footer');
+	}
 	public function login()
 	{
 		// if ($this->session->userdata('')) {

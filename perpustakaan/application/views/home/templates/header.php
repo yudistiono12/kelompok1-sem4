@@ -83,7 +83,7 @@
                                         <a href="<?=base_url('home/login/'); ?>">Masuk</a>
                                     </div>
                                      <div class="phone_num d-none d-xl-block">
-                                        <a href="<?=base_url('home/login/'); ?>"> Mendaftar</a>
+                                        <a href="<?=base_url('home/pendaftaran/'); ?>"> Mendaftar</a>
                                     </div>
                                     <!-- <div class="d-none d-lg-block">
                                         <a class="boxed-btn3" href="#">Post a Job</a>
