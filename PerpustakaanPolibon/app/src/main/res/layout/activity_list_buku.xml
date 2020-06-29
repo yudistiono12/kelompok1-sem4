@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListBuku">
+
+    <EditText
+        android:id="@+id/cariBuku"
+        android:layout_width="413dp"
+        android:layout_height="46dp"
+        android:background="#FFFFFF"
+        android:elevation="10dp"
+        android:ems="10"
+        android:hint="                                   Cari  Buku"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColorHint="#C8C7C7"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/container"
+        android:layout_width="410dp"
+        android:layout_height="108dp"
+        android:background="#FFFFFF"
+        android:elevation="10dp"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="58dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:padding="10dp"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="3dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/gambarBuku"
+        android:layout_width="117dp"
+        android:layout_height="106dp"
+        android:elevation="10dp"
+        android:padding="10dp"
+        app:srcCompat="@drawable/apple"
+        tools:layout_editor_absoluteX="-8dp"
+        tools:layout_editor_absoluteY="60dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Judul"
+        android:layout_width="274dp"
+        android:layout_height="44dp"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:text="Book of apple"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="60dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Penerbit"
+        android:layout_width="180dp"
+        android:layout_height="36dp"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:text="Apple Store"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="91dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Stock"
+        android:layout_width="180dp"
+        android:layout_height="36dp"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:text="Tersedia : 20"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="127dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/container2"
+            android:layout_width="410dp"
+            android:layout_height="108dp"
+            android:background="#FFFFFF"
+            android:elevation="10dp"
+            android:padding="10dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="177dp" />
+
+        <ImageView
+            android:id="@+id/gambarBuku2"
+            android:layout_width="117dp"
+            android:layout_height="106dp"
+            android:elevation="10dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/twitter"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-9dp"
+            tools:layout_editor_absoluteY="179dp" />
+
+        <TextView
+            android:id="@+id/penerbit2"
+            android:layout_width="180dp"
+            android:layout_height="36dp"
+            android:elevation="10dp"
+            android:padding="10dp"
+            android:text="Marvel"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <TextView
+            android:id="@+id/stock2"
+            android:layout_width="180dp"
+            android:layout_height="36dp"
+            android:elevation="10dp"
+            android:padding="10dp"
+            android:text="Tersedia : 9"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="246dp" />
+
+        <TextView
+            android:id="@+id/judul2"
+            android:layout_width="274dp"
+            android:layout_height="44dp"
+            android:elevation="10dp"
+            android:padding="10dp"
+            android:text="Avenger Story"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="179dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/container3"
+                android:layout_width="410dp"
+                android:layout_height="108dp"
+                android:background="#FFFFFF"
+                android:elevation="10dp"
+                android:padding="10dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="293dp" />
+
+            <ImageView
+                android:id="@+id/gambarBuku3"
+                android:layout_width="162dp"
+                android:layout_height="120dp"
+                android:elevation="10dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/av110"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-30dp"
+                tools:layout_editor_absoluteY="293dp" />
+
+            <TextView
+                android:id="@+id/stock3"
+                android:layout_width="180dp"
+                android:layout_height="36dp"
+                android:elevation="10dp"
+                android:padding="10dp"
+                android:text="Tersedia : 9"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="107dp"
+                tools:layout_editor_absoluteY="362dp" />
+
+            <TextView
+                android:id="@+id/judul3"
+                android:layout_width="274dp"
+                android:layout_height="44dp"
+                android:elevation="10dp"
+                android:padding="10dp"
+                android:text="Avenger eps 101"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="107dp"
+                tools:layout_editor_absoluteY="295dp" />
+
+            <TextView
+                android:id="@+id/penerbit3"
+                android:layout_width="180dp"
+                android:layout_height="36dp"
+                android:elevation="10dp"
+                android:padding="10dp"
+                android:text="Marvel"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="107dp"
+                tools:layout_editor_absoluteY="326dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

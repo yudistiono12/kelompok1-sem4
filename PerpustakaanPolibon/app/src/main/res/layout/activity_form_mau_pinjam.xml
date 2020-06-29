@@ -20,7 +20,7 @@
         android:id="@+id/nav_atas2"
         android:layout_width="507dp"
         android:layout_height="1dp"
-        android:background="#00BCD4"
+        android:background="#000000"
         android:textSize="14sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-3dp"
