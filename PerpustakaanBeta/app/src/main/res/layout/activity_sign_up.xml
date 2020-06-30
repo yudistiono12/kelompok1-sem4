@@ -38,6 +38,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             >
 
             <TextView
@@ -57,7 +58,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Silahkan isi sesuaib dengan kartu identitas anda!"
+                android:text="Silahkan isi sesuai dengan identitas anda!"
                 android:textColor="@color/white"
                 android:textSize="12sp"
                 android:layout_marginBottom="30dp"
@@ -68,15 +69,92 @@
             <AutoCompleteTextView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:hint="Username"
+                android:hint="Isikan NIM"
                 android:paddingStart="23dp"
                 android:background="@drawable/rounded_white"
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
                 android:textSize="14sp"
-                android:id="@+id/Username"
+                android:id="@+id/nim"
                 android:layout_marginBottom="20dp"
-                />
+                android:paddingLeft="23dp" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Isikan Nama Anda"
+                android:paddingStart="23dp"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="14sp"
+                android:id="@+id/nama"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="23dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Silahkan Pilih Jenis Kelamin :"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:paddingStart="23dp"
+                android:paddingLeft="23dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/txtjk"/>
+
+            <RadioGroup
+                android:id="@+id/radiojk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/lakilaki"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laki-Laki"/>
+                <RadioButton
+                    android:id="@+id/perempuan"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan"
+                    android:layout_marginBottom="10dp"/>
+            </RadioGroup>
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Pilih Fakultas"
+                android:paddingStart="23dp"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="14sp"
+                android:id="@+id/fakultas"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="23dp" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Pilih Program Studi"
+                android:paddingStart="23dp"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="14sp"
+                android:id="@+id/prodi"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="23dp" />
 
             <AutoCompleteTextView
                 android:layout_width="match_parent"
@@ -89,23 +167,11 @@
                 android:textSize="14sp"
                 android:inputType="textPassword"
                 android:id="@+id/Password"
-                />
-
-            <AutoCompleteTextView
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:hint="Konfirmasi Password"
-                android:paddingStart="23dp"
-                android:background="@drawable/rounded_white"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:textSize="14sp"
-                android:layout_marginTop="20dp"
-                android:id="@+id/Password"
-                android:layout_marginBottom="20dp"
-                />
+                android:paddingLeft="23dp"
+                android:layout_marginBottom="10dp"/>
 
             <Button
+                android:id="@+id/buttonregis"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:textColor="@color/white"

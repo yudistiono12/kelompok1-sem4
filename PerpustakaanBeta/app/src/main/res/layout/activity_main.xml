@@ -74,7 +74,7 @@
                 android:textSize="14sp"
                 android:id="@+id/Username"
                 android:layout_marginBottom="20dp"
-                />
+                android:paddingLeft="23dp" />
 
             <AutoCompleteTextView
                 android:layout_width="match_parent"
@@ -87,7 +87,7 @@
                 android:textSize="14sp"
                 android:inputType="textPassword"
                 android:id="@+id/Password"
-            />
+                android:paddingLeft="23dp" />
 
             <Button
                 android:id="@+id/submit"
