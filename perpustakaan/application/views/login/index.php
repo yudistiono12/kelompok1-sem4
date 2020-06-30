@@ -4,8 +4,12 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-7 col-md-6">
+                        <?php  if ($this->session->flashdata()) : ?>
+                            <?= $this->session->flashdata('message'); ?>
+                        <?php endif; ?>
                         <form role="form" method="post" action="<?= base_url('home/login'); ?>">
                             <div class="card-body">
+
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Username</label>
                                     <input type="text" class="form-control" id="username" name="username" placeholder="Masukkan Username" autocomplete="off" value="<?= set_value('username'); ?>">

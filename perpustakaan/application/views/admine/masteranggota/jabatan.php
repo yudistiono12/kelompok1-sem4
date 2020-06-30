@@ -4,7 +4,7 @@
 
 <div class="box box-solid box-danger">
   <div class="box-header with-border">
-    <h3 class="box-title"><i class="fa fa-book"></i> Daftar Dosen</h3>
+    <h3 class="box-title"><i class="fa fa-book"></i> Daftar Jabatan</h3>
     <div class="box-tools pull-right">
     
     </div>
@@ -13,13 +13,7 @@
   <div class="box-body">
     <div class="row">
       <div class="col-md-6" style="padding-bottom:9 ;">
-          <button class="form-control btn btn-primary" onclick="dosen_tambah()"><i class="glyphicon glyphicon-plus-sign"></i> Tambah Data</button>
-      </div>
-      <div class="col-md-3">
-          <a href="<?= base_url('dosen/export'); ?>" class="form-control btn btn-default"><i class="glyphicon glyphicon glyphicon-floppy-save"></i> Export Data Excel</a>
-      </div>
-      <div class="col-md-3">
-          <button class="form-control btn btn-default" data-toggle="modal" data-target="#import-dosen"><i class="glyphicon glyphicon glyphicon-floppy-open"></i> Import Data Excel</button>
+          <button class="form-control btn btn-primary" onclick="jabatan_tambah()"><i class="glyphicon glyphicon-plus-sign"></i> Tambah Data</button>
       </div>
     </div>
     <div class="form-group"></div>
@@ -27,13 +21,9 @@
       <thead>
         <tr>
           <th>No</th>
-          <th class="center"><i class="glyphicon glyphicon-plus"></i></th>
-          <th>NiP</th>
-          <th>Nama Dosen</th>
-          <th>Jabatan</th>
-          <th>No Telp</th>
-          <th>Foto</th>
-          <th style="text-align: center;">Pilihan</th>
+          <th>Nama Jabatan</th>
+          <th>Singkatan</th>
+           <th style="text-align: center;">Pilihan</th>
         </tr>
       </thead>
       <tbody>
@@ -41,12 +31,12 @@
     </table>
   </div>
   <div class="box-footer">
-    Menampilkan daftar Dosen, mengedit dan menghapus klik tombol pada kolom pilihan.<br>
+    Menampilkan daftar Jabatan, mengedit dan menghapus klik tombol pada kolom pilihan.<br>
     <b>F7</b> = Tambah data.
   </div><!-- box-footer -->
 </div>
-<?= $modal_dosen; ?>
-<?php show_my_confirm('konfirmasiHapus', 'hapus-dataDosen', 'Hapus Data Ini?', 'Ya, Hapus Data Ini'); ?>
+<?= $modal_jabatan; ?>
+<?php show_my_confirm2('konfirmasiHapus', 'hapus-dataJabatan', 'Mahasiswa', 'Hapus Data Ini?', 'Ya, Hapus Data Ini'); ?>
 <script>
   var dataTable;
 $(document).ready(function() {
@@ -77,20 +67,12 @@ $(document).ready(function() {
           "targets": [ -1 ],
           "orderable": false, 
         },
-        { 
-          "targets": [-2],
-          "visible": false,
-        },
-        { 
-          "targets": [ 1 ],
-          "orderable": false, 
-        },
           ],
       "sPaginationType": "simple_numbers", 
       "iDisplayLength": 10,
       "aLengthMenu": [[10, 20, 50, 100, 150], [10, 20, 50, 100, 150]],
       "ajax":{
-        url :"<?= base_url('admin/masteranggota/dosen_list'); ?>",
+        url :"<?= base_url('admin/masteranggota/jabatan_list'); ?>",
         type: "post",
         error: function(){ 
           $(".my-grid-error").html("");
@@ -106,7 +88,8 @@ $(document).ready(function() {
     } );
 
   });
-  function effect_msg_form() {
+ 
+   function effect_msg_form() {
       // $('.form-msg').hide();
       $('.form-msg').show(1000);
       setTimeout(function() { $('.form-msg').fadeOut(1000); }, 3000);
@@ -123,30 +106,28 @@ $(document).ready(function() {
       dataTable.ajax.reload(null,false); //refresh table
   }
 
-  function dosen_tambah()
+  function jabatan_tambah()
   {
-      save_method = 'tambahDosen';
-      $('#form-dosen')[0].reset(); 
-      $('#dosen').modal('show');
+      save_method = 'tambahJabatan';
+      $('#form-jabatan')[0].reset(); 
+      $('#jabatan').modal('show');
       $('.form-msg').html('');
-      $('.modal-title').text('Tambah Dosen Baru'); 
-      $('#label-foto').text('Upload Foto'); // merubah label
-      $('#foto-preview').hide(); //menyembunyikan foto sebelumnya
+      $('.modal-title').text('Tambah jabatan Baru'); 
   }
 
   function simpan()
 {
     var url;
 
-    if(save_method == 'tambahDosen') {
-        url = "<?= site_url('admin/masteranggota/dosen_tambah')?>";
+    if(save_method == 'tambahJabatan') {
+        url = "<?= site_url('admin/masteranggota/jabatan_tambah')?>";
     } else {
-        url = "<?= site_url('admin/masteranggota/dosen_proses_ubah')?>";
+        url = "<?= site_url('admin/masteranggota/jabatan_proses_ubah')?>";
     }
 
     // ajax adding data to database
- 
-    var formData = new FormData($('#form-dosen')[0]);
+
+    var formData = new FormData($('#form-jabatan')[0]);
     $.ajax({
         url : url,
         type: "POST",
@@ -164,8 +145,7 @@ $(document).ready(function() {
             }
             else
             {
-                // $('#preview').remove();
-                $('#dosen').modal('hide');
+                $('#jabatan').modal('hide');
                 $('.msg').html(data.msg);
                    effect_msg();
                 reload_table();
@@ -176,45 +156,28 @@ $(document).ready(function() {
             alert('gagal');
         }
     });
-}
-function dosen_ubah(nim)
-{
-    save_method = 'ubahDosen';
-    $('#form-dosen')[0].reset();
-    $('#dosen').modal('show'); 
-    $('.form-msg').html('');
-     // $('#preview').html('');
-    $('#foto-preview').show(); //mengeluarkan foto sebelumny
-    $('.modal-title').text('Ubah Data Dosen');
+} 
 
-    $('#nip').attr('readonly',true);$('#jabatan').hide();
+function jabatan_ubah(id_jabatan)
+{
+    save_method = 'ubahJabatan';
+    $('#form-jabatan')[0].reset();
+    $('#jabatan').modal('show'); 
+    $('.form-msg').html('');
+    $('.modal-title').text('Ubah Data jabatan');
+
 
     //Ajax Load data from ajax
     $.ajax({
-        url : "<?= site_url('admin/masteranggota/dosen_ubah')?>/" + nim,
+        url : "<?= site_url('admin/masteranggota/jabatan_ubah')?>/" + id_jabatan,
         type: "GET",
         dataType: "JSON",
         success: function(data)
         {
 
-            $('[name="nip"]').val(data.nip);
-            $('[name="nama_dosen"]').val(data.nama);
-            $('[name="no_tlp"]').val(data.no_tlp);
-            $('[name="foto_lama"]').val(data.foto);
-            // $('#foto-preview').show(); // show photo preview modal
-
-            if(data.foto)
-            {
-                $('#label-foto').text('Ubah foto'); // label foto upload
-                $('#foto-preview div').html('<img src="<?= base_url()?>upload/anggota/'+data.foto+'" class="img-responsive">'); // show photo
-                $('#foto-preview div').append('<input type="checkbox" name="remove_photo" value="'+data.foto+'"/> hapus foto ketika disimpan'); // remove photo
-
-            }
-            else
-            {
-                $('#label-foto').text('Upload Photo'); // label photo upload
-                $('#foto-preview div').text('(No photo)');
-            }
+            $('[name="id_jabatan"]').val(data.id_jabatan);
+            $('[name="jabatan"]').val(data.nama_jabatan);
+            $('[name="singkatan"]').val(data.singkatan);
         },
         error: function (jqXHR, textStatus, errorThrown)
         {
@@ -222,17 +185,18 @@ function dosen_ubah(nim)
         }
     });
 }
-var nip;
-  $(document).on("click", ".konfirmasiHapus-dosen", function() {
-    nip = $(this).attr("data-id");
+
+var id_prodi;
+  $(document).on("click", ".konfirmasiHapus-jabatan", function() {
+    id_jabatan = $(this).attr("data-id");
   })
-  $(document).on("click", ".hapus-dataDosen", function() {
-    var id = nip;
+  $(document).on("click", ".hapus-dataJabatan", function() {
+    var id = id_jabatan;
     
     $.ajax({
       method: "POST",
-      url: "<?= base_url('admin/masteranggota/dosen_hapus'); ?>",
-      data: "nip=" +id
+      url: "<?= base_url('admin/masteranggota/jabatan_hapus'); ?>",
+      data: "id_jabatan=" +id
     })
     .done(function(data) {
       $('#konfirmasiHapus').modal('hide');
@@ -247,8 +211,41 @@ $(document).on('keydown', 'body', function(e){
 
         if(charCode == 118) //F7
         {
-            mahasiswa_tambah();
+            prodi_tambah();
             return false;
         }
 });
-  </script>
+// function harusHurufPen(evt){
+//         var charCode = (evt.which) ? evt.which : event.keyCode
+//       if ((charCode < 65 || charCode > 90)&&(charCode < 97 || charCode > 122 )&&(charCode > 187 || charCode < 189 )&&charCode>32)
+//       return false;
+//       return true;
+//   }
+</script>
+
+
+<!--modal dialog untuk hapus -->
+  <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Konfirmasi Hapus</h4>
+                </div>
+            
+                <div class="modal-body">
+                    <p>Anda akan menghapus Data kategori  ini</p>
+                    <p><strong>Peringatan</strong>  Setelah data dihapus, data tidak dapat dikembalikan!</p>
+                    <br />
+                    <p>Ingin melanjutkan menghapus?</p>
+                    <p class="debug-url"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-danger btn-ok">Hapus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--content -->

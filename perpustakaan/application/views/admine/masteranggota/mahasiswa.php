@@ -28,8 +28,12 @@
       <thead>
         <tr>
           <th>No</th>
+          <th class="center"><i class="glyphicon glyphicon-plus"></i></th>
           <th>Nim</th>
+          <th>username</th>
+          <th>password</th>
           <th>Nama Mahasiswa</th>
+          <th>Angkatan</th>
           <th>Prodi</th>
           <th>No Telp</th>
           <th>Foto</th>
@@ -45,12 +49,12 @@
     <b>F7</b> = Tambah data.
   </div><!-- box-footer -->
 </div>
-<!-- <?= $modal_mahasiwa; ?> -->
+<?= $modal_mahasiswa; ?>
 <?php show_my_confirm('konfirmasiHapus', 'hapus-dataMahasiswa', 'Hapus Data Ini?', 'Ya, Hapus Data Ini'); ?>
 <script>
-  var dataTable;
+  var tablenya;
 $(document).ready(function() {
-    dataTable = $('#table').DataTable( {
+    tablenya = $('#table').DataTable( {
       "serverSide": true,
       "stateSave" : false,
       "bAutoWidth": true,
@@ -70,13 +74,29 @@ $(document).ready(function() {
       "aaSorting": [[ 0, "desc" ]],
       "columnDefs": [ 
         {
-          "targets": 'no-sort',
-          "orderable": false,
+            "targets": [3],
+            "visible": false,
+        },
+        {
+            "targets": [4],
+            "visible": false,
+        },
+        {
+            "targets": [-2],
+            "visible": false,
+        },
+        {
+            "targets": [-3],
+            "visible": false,
         },
         { 
           "targets": [ -1 ],
           "orderable": false, 
         },
+        { 
+          "targets": [ 1 ],
+          "orderable": false, 
+        }
           ],
       "sPaginationType": "simple_numbers", 
       "iDisplayLength": 10,
@@ -97,7 +117,71 @@ $(document).ready(function() {
     ?>
     } );
 
+     var tablee = $('#table').DataTable();
+     // $('#table tbody').on('click', 'td.details-control', function () {
+      $('.details-control').on("click", function(){
+        var tr = $(this).closest('tr');
+        var row = tablenya.row( tr );
+ 
+        if ( row.child.isShown() ) {
+            // This row is already open - close it
+            row.child.hide();
+            tr.removeClass('shown');
+        }
+        else {
+            // Open this row
+            row.child( format_mahasiswa(row.data()) ).show();
+            tr.addClass('shown');
+        }
+  } );
+
   });
+
+  function format_mahasiswa (d) {
+        // `d` is the original data object for the row
+        return '<div class="box box-info">'+
+      '<div class="box-header with-border">'+
+        '<h3 class="box-title">Detail Mahasiswa</h3>'+
+      '</div>'+
+      '<div class="box-body no-padding">'+
+      '<table class="table table-striped">'+
+                    '<tr>'+
+                      '<td>NIM</td>'+
+                      '<td>'+d[2]+'</td>'+
+                    '</tr>'+
+                     '<tr>'+
+                      '<td>Nama</td>'+
+                      '<td>'+d[5]+'</td>'+
+                    '</tr>'+
+                     '<tr>'+
+                      '<td>Prodi</td>'+
+                      '<td>'+d[7]+'</td>'+
+                    '</tr>'+
+                     '<tr>'+
+                      '<td>Angkatan</td>'+
+                      '<td>'+d[6]+'</td>'+
+                    '</tr>'+
+                     '<tr>'+
+                      '<td>No Telp</td>'+
+                      '<td>'+d[-2]+'</td>'+
+                    '</tr>'+
+                     '<tr>'+
+                      '<td>Username</td>'+
+                      '<td>'+d[3]+'</td>'+
+                    '</tr>'+
+                     '<tr>'+
+                      '<td>Password</td>'+
+                      '<td>'+d[4]+'</td>'+
+                    '</tr>'+
+                     '<tr>'+
+                      '<td>Foto</td>'+
+                      '<td>'+d[-2]+'</td>'+
+                    '</tr>'+
+                  '</table>'+
+                '</div>'+
+      '</div>'+
+    '</div>';
+    }
  
    function effect_msg_form() {
       // $('.form-msg').hide();
@@ -113,31 +197,34 @@ $(document).ready(function() {
 
   function reload_table()
   {
-      dataTable.ajax.reload(null,false); //refresh table
+      tablenya.ajax.reload(null,false); //refresh table
   }
 
-  function prodi_tambah()
+  function mahasiswa_tambah()
   {
-      save_method = 'tambahProdi';
-      $('#form-prodi')[0].reset(); 
-      $('#prodi').modal('show');
+      save_method = 'tambahMahasiswa';
+      $('#form-mahasiswa')[0].reset(); 
+      $('#mahasiswa').modal('show');
       $('.form-msg').html('');
-      $('.modal-title').text('Tambah prodi Baru'); 
+      $('.modal-title').text('Tambah Mahasiswa Baru'); 
+      $('#label-foto').text('Upload Foto'); // merubah label
+      $('#foto-preview').hide(); //menyembunyikan foto sebelumnya
+      $('#prodi').show();$('#angkatan').show();$('#keterangan').show();
   }
 
   function simpan()
 {
     var url;
 
-    if(save_method == 'tambahProdi') {
-        url = "<?= site_url('admin/masteranggota/prodi_tambah')?>";
+    if(save_method == 'tambahMahasiswa') {
+        url = "<?= site_url('admin/masteranggota/mahasiswa_tambah')?>";
     } else {
-        url = "<?= site_url('admin/masteranggota/prodi_proses_ubah')?>";
+        url = "<?= site_url('admin/masteranggota/mahasiswa_proses_ubah')?>";
     }
 
     // ajax adding data to database
 
-    var formData = new FormData($('#form-prodi')[0]);
+    var formData = new FormData($('#form-mahasiswa')[0]);
     $.ajax({
         url : url,
         type: "POST",
@@ -155,7 +242,8 @@ $(document).ready(function() {
             }
             else
             {
-                $('#prodi').modal('hide');
+                // $('#preview').remove();
+                $('#mahasiswa').modal('hide');
                 $('.msg').html(data.msg);
                    effect_msg();
                 reload_table();
@@ -168,26 +256,47 @@ $(document).ready(function() {
     });
 }
 
-function prodi_ubah(id_prodi)
+function mahasiswa_ubah(nim)
 {
-    save_method = 'ubahProdi';
-    $('#form-prodi')[0].reset();
-    $('#prodi').modal('show'); 
+    save_method = 'ubahMahasiswa';
+    $('#form-mahasiswa')[0].reset();
+    $('#mahasiswa').modal('show'); 
     $('.form-msg').html('');
-    $('.modal-title').text('Ubah Data Prodi');
+     // $('#preview').html('');
+    $('#foto-preview').show(); //mengeluarkan foto sebelumny
+    $('.modal-title').text('Ubah Data Mahasiswa');
+
+    $('#nim').attr('readonly',true);$('#prodi').hide();$('#angkatan').hide();$('#keterangan').hide();
 
 
     //Ajax Load data from ajax
     $.ajax({
-        url : "<?= site_url('admin/masteranggota/prodi_ubah')?>/" + id_prodi,
+        url : "<?= site_url('admin/masteranggota/mahasiswa_ubah')?>/" + nim,
         type: "GET",
         dataType: "JSON",
         success: function(data)
         {
 
-            $('[name="id_prodi"]').val(data.id_prodi);
-            $('[name="prodi"]').val(data.prodi);
-            $('[name="jurusan"]').val(data.jurusan);
+            $('[name="nim"]').val(data.nim);
+            $('[name="nama_mahasiswa"]').val(data.nama);
+            $('[name="no_tlp"]').val(data.no_tlp);
+             $('[name="prodi"]').val(data.id_prodi);
+            $('[name="angkatan"]').val(data.angkatan);
+             $('[name="foto_lama"]').val(data.foto);
+            // $('#foto-preview').show(); // show photo preview modal
+
+            if(data.foto)
+            {
+                $('#label-foto').text('Ubah foto'); // label foto upload
+                $('#foto-preview div').html('<img src="<?= base_url()?>upload/anggota/'+data.foto+'" class="img-responsive">'); // show photo
+                $('#foto-preview div').append('<input type="checkbox" name="remove_photo" value="'+data.foto+'"/> hapus foto ketika disimpan'); // remove photo
+
+            }
+            else
+            {
+                $('#label-foto').text('Upload Photo'); // label photo upload
+                $('#foto-preview div').text('(No photo)');
+            }
         },
         error: function (jqXHR, textStatus, errorThrown)
         {
@@ -196,17 +305,17 @@ function prodi_ubah(id_prodi)
     });
 }
 
-var id_prodi;
-  $(document).on("click", ".konfirmasiHapus-prodi", function() {
-    id_prodi = $(this).attr("data-id");
+var nim;
+  $(document).on("click", ".konfirmasiHapus-mahasiswa", function() {
+    nim = $(this).attr("data-id");
   })
-  $(document).on("click", ".hapus-dataProdi", function() {
-    var id = id_prodi;
+  $(document).on("click", ".hapus-dataMahasiswa", function() {
+    var id = nim;
     
     $.ajax({
       method: "POST",
-      url: "<?= base_url('admin/masteranggota/prodi_hapus'); ?>",
-      data: "id_prodi=" +id
+      url: "<?= base_url('admin/masteranggota/mahasiswa_hapus'); ?>",
+      data: "nim=" +id
     })
     .done(function(data) {
       $('#konfirmasiHapus').modal('hide');
@@ -221,7 +330,7 @@ $(document).on('keydown', 'body', function(e){
 
         if(charCode == 118) //F7
         {
-            prodi_tambah();
+            mahasiswa_tambah();
             return false;
         }
 });

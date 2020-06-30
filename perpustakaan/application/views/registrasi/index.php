@@ -45,38 +45,132 @@
   <div class="register-box-body">
     <p class="login-box-msg">form pendaftaran</p>
 
-    <form action="<?= base_url('assets/anggota/'); ?>index.html" method="post">
-      <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="Masukkan Nim">
-        
-      </div>
-      <div class="form-group has-feedback">
-        <input type="email" class="form-control" placeholder="Nama Lengkap">
-        
-      </div>
-      <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="jurusan">
-        
-      </div>
-      <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="No Telepon">
-        
-      </div>
-      <div class="row">
-        <div class="col-xs-8">
-          <div class="checkbox icheck">
-            <label>
-              <input type="checkbox"> I agree to the <a href="#">terms</a>
-            </label>
+  <div class="nav-tabs-custom">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#mahasiswa" onclick="mahasiswa()" data-toggle="tab">Mahasiswa</a></li>
+        <li><a href="#dosen" onclick="dosen()" data-toggle="tab">Dosen</a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="active tab-pane" id="mahasiswa">
+        <?= $this->session->flashdata('message'); ?>
+        <form method="post" action="<?= base_url('home/registermaha'); ?>">
+        <div class="form-group row has-feedback">
+          <label class="col-md-3 control-label">NIM</label>
+          <div class="col-md-9">
+            <input type="text" class="form-control" placeholder="Masukkan Nim" name="nim">
+            <?= form_error('nim', ' <small class="text-danger pl-2">', '</small>'); ?>
           </div>
         </div>
-        <!-- /.col -->
-        <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Daftar</button>
+        <div class="form-group row has-feedback">
+          <label class="col-md-3 control-label">Nama lengkap</label>
+          <div class="col-md-9">
+            <input type="text" class="form-control" placeholder="Nama Lengkap" name="nama">
+            <?= form_error('nama', ' <small class="text-danger pl-2">', '</small>'); ?>
+          </div>          
         </div>
+        <div class="form-group row" id="prodi">
+          <label for="prodi"  class="col-md-3 control-label">Prodi</label>
+          <div class="col-md-8">
+            <select name="prodi" class="form-control select2">
+            <?php
+            foreach ($dataProdi as $prodi) {
+              ?>
+              <option value="<?= $prodi['id_prodi'] ?>">
+                <?= $prodi['prodi']; ?>
+              </option>
+              <?php
+            }
+            ?>
+          </select>
+          </div>
+        </div>
+        <div class="form-group row has-feedback">
+          <label  class="col-md-3 control-label">Angkatan</label>
+          <div class="col-md-4">
+          <select name="angkatan" class="form-control select2" >
+            <?php
+            $now=2030;
+
+            for ($a=2012;$a<=$now;$a++)
+
+            { ?>
+              <option value="<?= $a; ?>">
+                <?= $a ?>
+              </option>
+            <?php }
+            ?>
+          </select>
+          </div>
+        </div>
+        <div class="form-group row has-feedback">
+          <label  class="col-md-3 control-label">No Telp</label>
+          <div class="col-md-8">
+            <input type="text" name="no_tlp" class="form-control" placeholder="No Telepon">
+            <?= form_error('no_tlp', ' <small class="text-danger pl-2">', '</small>'); ?>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-8">
+            <h6 class="center">Sudah punya akun, Silahkan <u><a href="<?= base_url('Home/login') ?>">Login!</a></u></h6>
+          </div>
+          <!-- /.col -->
+          <div class="col-xs-4">
+            <button type="submit"  class="btn btn-primary btn-block btn-flat">Daftar</button>
+          </div>
+        </div>
+        </form>
+    </div><!-- tutup mahasiswa  -->
+    <div class="active tab-pane" id="dosen">
+      <form method="post" action="<?= base_url('home/registerdos'); ?>">
+        <div class="form-group row has-feedback">
+          <label class="col-md-3 control-label">NIP</label>
+          <div class="col-md-9">
+            <input type="text" class="form-control" placeholder="NIP lengkap tidak ada spasi" name="nip">
+          </div>
+        </div>
+        <div class="form-group row has-feedback">
+          <label class="col-md-3 control-label">Nama lengkap</label>
+          <div class="col-md-9">
+            <input type="text" class="form-control" placeholder="Nama Lengkap" name="nama_dosen">
+          </div>          
+        </div>
+        <div class="form-group row" id="jabatan">
+          <label  class="col-md-3 control-label">jabatan</label>
+          <div class="col-md-5">
+          <select name="jabatan" class="form-control select2" >
+            <?php
+            foreach ($datajabatan as $jabatan) {
+              ?>
+              <option value="<?= $jabatan['id_jabatan'] ?>">
+                <?= $jabatan['nama_jabatan']; ?>
+              </option>
+              <?php
+            }
+            ?>
+          </select>
+          </div>
+        </div>
+        <div class="form-group row has-feedback">
+          <label  class="col-md-3 control-label">No Telp</label>
+          <div class="col-md-8">
+            <input type="text" name="no_tlp" class="form-control" placeholder="No Telepon">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-8"><h6 class="center">Sudah punya akun, Silahkan <u><a href="<?= base_url('Home/login') ?>">Login!</a></u></h6></div>
+          <div class="col-xs-4">
+            <button type="submit" class="btn btn-primary btn-block btn-flat">Daftar</button>
+          </div>
+        </div>
+        </form>
+    </div><!-- tutup dosen  -->
+  </div><!-- tutup content -->
+      <div class="msg" style="display:none;">
+        <?= @$this->session->flashdata('msg'); ?>
+      </div>
         <!-- /.col -->
       </div>
-    </form>
+    
 
     
 
@@ -90,6 +184,7 @@
 <script src="<?= base_url('assets/anggota/'); ?>plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="<?= base_url('assets/anggota/'); ?>bootstrap/js/bootstrap.min.js"></script>
+<script src="<?= base_url('assets/anggota/'); ?>fastclick/fastclick.js"></script>
 <!-- iCheck -->
 <script src="<?= base_url('assets/anggota/'); ?>plugins/iCheck/icheck.min.js"></script>
 <script>
@@ -100,6 +195,52 @@
       increaseArea: '20%' // optional
     });
   });
+  $('#dosen').hide();
+  // function mahasiswa() {
+  //   $('#dosen').hide();
+  // }
+  // function dosen() {
+  //   $('#mahasiswa').hide();$('#dosen').show();
+  // } 
+//   <?php
+//       if ($this->session->flashdata('msg') != '') {
+//         echo "effect_msg();";
+//       }
+//     ?>
+//    function simpan()
+// {
+//     var url= "<?= site_url('admin/Home/regismaha')?>"; 
+//     var formData = new FormData($('#form-mahasiswa')[0]);
+//     $.ajax({
+//         url : url,
+//         type: "POST",
+//         data: formData,
+//         contentType: false,
+//         processData: false,
+//         dataType: "JSON",
+//         success: function(data)
+//         {
+
+//             if(data.status) //jika berhasil
+//             {
+//                 $('.form-msg').html(data.msg);
+//                 effect_msg_form();
+//             }
+//             else
+//             {
+//                 // $('#preview').remove();
+//                 $('#dosen').modal('hide');
+//                 $('.msg').html(data.msg);
+//                    effect_msg();
+//                 reload_table();
+//             }
+//         },
+//         error: function (jqXHR, textStatus, errorThrown)
+//         {
+//             alert('gagal');
+//         }
+//     });
+// }
 </script>
 </body>
 </html>

@@ -36,7 +36,7 @@
   </div><!-- box-footer -->
 </div>
 <?= $modal_prodi; ?>
-<?php show_my_confirm('konfirmasiHapus', 'hapus-dataProdi', 'Hapus Data Ini?', 'Ya, Hapus Data Ini'); ?>
+<?php show_my_confirm2('konfirmasiHapus', 'hapus-dataProdi', 'Mahasiswa', 'Hapus Data Ini?', 'Ya, Hapus Data Ini'); ?>
 <script>
   var dataTable;
 $(document).ready(function() {
@@ -156,7 +156,7 @@ $(document).ready(function() {
             alert('gagal');
         }
     });
-}
+} 
 
 function prodi_ubah(id_prodi)
 {

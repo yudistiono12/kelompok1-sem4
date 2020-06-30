@@ -44,7 +44,9 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <?= $this->session->flashdata('message'); ?>
+                        <?php  if ($this->session->flashdata()) : ?>
+                        <?= $this->session->flashdata(); ?>
+                        <?php endif; ?>
                         <!-- /.card-header -->
                         <!-- form start -->
                         <form role="form" method="post" action="<?= base_url('home/login'); ?>">

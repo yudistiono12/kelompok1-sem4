@@ -1,12 +1,15 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Profile extends CI_Controller
+class Profile extends AUTH_Controller
 {
     public function __construct()
     {
         parent::__construct();
         $this->load->library('Template');
+        if($this->userdata->id_jenis != '1'){
+                redirect('Home/login');
+        }
     }
     public function index()
     {

@@ -4,12 +4,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 /**
  * 
  */
-class Masterbuku extends CI_Controller
+class Masterbuku extends AUTH_Controller
 {
 		public function __construct() {
 			parent::__construct();
 			$this->load->library('Template');
 			$this->load->model('admin/M_masterbuku', 'master');
+			if($this->userdata->id_jenis != '1'){
+				redirect('Home/login');
+			}
 		}
 
 		// buka buku
@@ -23,6 +26,7 @@ class Masterbuku extends CI_Controller
 
 		}
 
+		// public function tambah_buku()
 		// tutup buku
 
 		//buka penerbit

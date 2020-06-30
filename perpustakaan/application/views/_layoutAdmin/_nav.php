@@ -53,7 +53,7 @@
               <a href="<?= base_url('Admin/Profile'); ?>" class="btn btn-default btn-flat">Profile</a>
             </div>
             <div class="pull-right">
-              <a href="<?= base_url('Auth/logout'); ?>" class="btn btn-default btn-flat">Keluar</a>
+              <a href="<?= base_url('Home/logout'); ?>" class="btn btn-default btn-flat">Keluar</a>
             </div>
           </li>
         </ul>

@@ -42,6 +42,11 @@
               <i class="fa fa-moon-o"></i>Data prodi
             </a>
           </li>
+          <li <?php if ($pagae == 'datajabatan') {echo 'class="active"';} ?>>
+            <a href="<?= base_url('admin/masteranggota/datajabatan'); ?>">
+              <i class="fa fa-moon-o"></i>Data Jabatan
+            </a>
+          </li>
         </ul>
       </li>
 
@@ -118,6 +123,20 @@
             <a href="<?= base_url('admin/pengembalian/tahunan'); ?>"><i class="fa fa-circle-o"></i>Buku favorit
             </a>
         </ul>
+      </li>
+      <li class="header">DENDA</li>
+        <li <?php if ($page == 'denda') {echo 'class="active"';} ?>>
+          <a href="<?= base_url('admin/denda');?>">
+            <i class="fa fa-usd"></i> <span>Denda</span>
+          </a>
+        </li>
+
+      <li class="header">PETUGAS/OPERATOR</li>
+      <li <?php if ($page == 'datapetugas') {echo 'class="active"';} ?>>
+        <a href="<?= base_url('admin/petugas'); ?>">
+          <i class="fa fa-user-plus"></i>
+          <span>Petugas</span>
+        </a>
       </li>
     </ul>
     <!-- /.sidebar-menu -->
