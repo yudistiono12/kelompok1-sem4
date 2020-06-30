@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".SignUp">
 
-    <!--<ImageView
+    <ImageView
         android:id="@+id/formbackg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/background"
         android:scaleType="centerCrop"
-        />-->
+        />
 
     <ImageView
         android:id="@+id/formlogo"
@@ -20,15 +20,27 @@
         android:layout_height="75dp"
         android:src="@drawable/logopolije"
         android:scaleType="fitCenter"
-        android:layout_marginTop="70dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perpustakaan Polibon"
+        android:layout_below="@id/formlogo"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="27dp"
+        android:gravity="center"/>
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:layout_below="@id/formlogo"
-        android:id="@+id/scrollView">
+        android:id="@+id/scrollView"
+        android:layout_marginTop="40dp">
 
         <LinearLayout
             android:layout_width="match_parent"
