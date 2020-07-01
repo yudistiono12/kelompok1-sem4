@@ -20,7 +20,7 @@ class Profile extends AUTH_Controller
         $data['judul']             = "Beranda";
         $data['deskripsi']         = "Panel";
         $data['pagae']    = "";
-        // $data['userdata'] 		= $this->userdata;
+         $data['userdata'] 		= $this->userdata;
         $this->template->views('admine/profile', $data);
     }
 

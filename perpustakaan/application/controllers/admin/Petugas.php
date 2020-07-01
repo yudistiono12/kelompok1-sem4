@@ -20,7 +20,7 @@ class Petugas extends AUTH_Controller
 		$data['page'] 			= "datapetugas";
 		$data['judul'] 			= "Petugas";
 		$data['deskripsi'] 		= "Data Petugas";
-		// $data['userdata'] 		= $this->userdata;
+		 $data['userdata'] 		= $this->userdata;
 		$data['datajabatan'] = $this->master->jabatan_all();
 		$data['modal_mahasiswa'] = show_my_modal('admine/modal/mdl_petugas', 'petugas', $data);
 		$this->template->views('admine/petugas', $data);

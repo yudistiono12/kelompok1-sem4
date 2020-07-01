@@ -21,12 +21,14 @@ class Masterbuku extends AUTH_Controller
 			$data['judul'] 			= "Buku";
 			$data['deskripsi'] 		= "Data buku";
 			$data['pagae']		= "databuku";
-			// $data['userdata'] 		= $this->userdata;
+			$data['userdata'] 		= $this->userdata;
 			$this->template->views('admine/masterbuku/buku', $data);
 
 		}
 
-		// public function tambah_buku()
+		public function tambah_buku() {
+
+		}
 		// tutup buku
 
 		//buka penerbit
@@ -35,7 +37,7 @@ class Masterbuku extends AUTH_Controller
 			$data['judul'] 			= "Penerbit";
 			$data['deskripsi'] 		= "Data Penerbit";
 			$data['pagae']		= "datapenerbit";
-			// $data['userdata'] 		= $this->userdata;
+			 $data['userdata'] 		= $this->userdata;
 			$data['modal_penerbit'] = show_my_modal('admine/modal/mdl_penerbit', 'penerbit', $data);
 			$this->template->views('admine/masterbuku/penerbit', $data);
 
@@ -141,7 +143,7 @@ class Masterbuku extends AUTH_Controller
 			$data['judul'] 			= "Kategori";
 			$data['deskripsi'] 		= "Data Kategori";
 			$data['pagae']		= "datakategori";
-			// $data['userdata'] 		= $this->userdata;
+			 $data['userdata'] 		= $this->userdata;
 			$data['modal_kategori'] = show_my_modal('admine/modal/mdl_kategori', 'kategori', $data);
 			$this->template->views('admine/masterbuku/kategori', $data);
 
@@ -244,7 +246,7 @@ class Masterbuku extends AUTH_Controller
 			$data['judul'] 			= "Pengarang";
 			$data['deskripsi'] 		= "Data Pengarang";
 			$data['pagae']		= "datapengarang";
-			// $data['userdata'] 		= $this->userdata;
+			 $data['userdata'] 		= $this->userdata;
 			$data['modal_pengarang'] = show_my_modal('admine/modal/mdl_pengarang', 'pengarang', $data);
 			$this->template->views('admine/masterbuku/pengarang', $data);
 

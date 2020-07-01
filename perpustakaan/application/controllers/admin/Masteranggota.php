@@ -246,7 +246,7 @@ class Masteranggota extends AUTH_Controller
 		$data['judul'] 			= "Dosen";
 		$data['deskripsi'] 		= "Data Dosen";
 		$data['pagae']		= "datadosen";
-		// $data['userdata'] 		= $this->userdata;
+		$data['userdata'] 		= $this->userdata;
 		$data['datajabatan'] = $this->master->jabatan_all();
 		$data['modal_dosen'] = show_my_modal('admine/modal/mdl_dosen', 'dosen', $data);
 		$this->template->views('admine/masteranggota/dosen', $data);
@@ -427,7 +427,7 @@ class Masteranggota extends AUTH_Controller
 		$data['judul'] 			= "Prodi";
 		$data['deskripsi'] 		= "Data Prodi";
 		$data['pagae']		= "dataprodi";
-		// $data['userdata'] 		= $this->userdata;
+		$data['userdata'] 		= $this->userdata;
 		$data['modal_prodi'] = show_my_modal('admine/modal/mdl_prodi', 'prodi', $data);
 		$this->template->views('admine/masteranggota/prodi', $data);
 	}
@@ -524,7 +524,7 @@ class Masteranggota extends AUTH_Controller
 		$data['judul'] 			= "Jabatan";
 		$data['deskripsi'] 		= "Data Jabatan";
 		$data['pagae']		= "datajabatan";
-		// $data['userdata'] 		= $this->userdata;
+		$data['userdata'] 		= $this->userdata;
 		$data['modal_jabatan'] = show_my_modal('admine/modal/mdl_jabatan', 'jabatan', $data);
 		$this->template->views('admine/masteranggota/jabatan', $data);
 	}

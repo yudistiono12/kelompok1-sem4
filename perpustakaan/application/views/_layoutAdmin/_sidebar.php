@@ -5,11 +5,11 @@
     <!-- Sidebar user panel (optional) -->
     <div class="user-panel">
       <div class="pull-left image">
-        <img src="<?= base_url(); ?>assets/admin/img/pustakawan/ibu.jpg" class="img-circle" alt="User Image"> 
+        <img src="<?= base_url(); ?>upload/anggota/<?= $userdata->foto ?>" class="img-circle" alt="User Image"> 
         <!-- gambar ambil dari session -->
       </div>
       <div class="pull-left info">
-        <p>nama pustakawan dari session</p>
+        <p><?= $userdata->nama ?></p>
         <!-- Status -->
         <a href="<?= base_url(); ?>assets/#"><i class="fa fa-circle text-success"></i> Online</a>
       </div>
