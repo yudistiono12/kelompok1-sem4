@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                         //jika login berhasil
                         Toast.makeText(getApplicationContext(),"Login Sukses",
                                 Toast.LENGTH_SHORT).show();
-                        Intent inte = new Intent(MainActivity.this, Dashboard.class);
+                        Intent inte = new Intent(MainActivity.this, KatalogBuku.class);
                         startActivity(inte);
                         finish();
                     } else {
