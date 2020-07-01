@@ -11,7 +11,7 @@
                             <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Politeknik Negeri Jember Kampus Bondowoso</h3>
                             <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">We  One Stop Information Service Provider</p>
                             <div class="sldier_btn wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
-                                <a href="#" class="boxed-btn3">Upload your Resume</a>
+                                <a href="#" class="boxed-btn3">Info</a>
                             </div>
                         </div>
                     </div>
@@ -94,6 +94,9 @@
             </div>
             <div class="job_lists">
                 <div class="row">
+                    <?php foreach ($kategori as $ktg ): ?>
+                        
+                   
                     <div class="col-lg-12 col-md-12">
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
@@ -101,171 +104,23 @@
                                     <img src="<?= base_url('assets/homee/'); ?>img/svg_icon/1.svg" alt="">
                                 </div>
                                 <div class="jobs_conetent">
-                                    <a href="job_details.html"><h4>Software Engineer</h4></a>
-                                    <div class="links_locat d-flex align-items-center">
-                                        <div class="location">
-                                            <p> <i class="fa fa-map-marker"></i> California, USA</p>
-                                        </div>
-                                        <div class="location">
-                                            <p> <i class="fa fa-clock-o"></i> Part-time</p>
-                                        </div>
-                                    </div>
+                                    <a href="job_details.html"><h4><?= $ktg['nama_kategori'] ?></h4></a>
+                            
                                 </div>
                             </div>
                             <div class="jobs_right">
                                 <div class="apply_now">
                                     <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
-                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>
+                                    <a href="job_details.html" class="boxed-btn3">Lihat</a>
                                 </div>
                                 <div class="date">
-                                    <p>Date line: 31 Jan 2020</p>
+                                    <p>tampilkan buku berdasarkan <b>kategori</b></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-md-12">
-                        <div class="single_jobs white-bg d-flex justify-content-between">
-                            <div class="jobs_left d-flex align-items-center">
-                                <div class="thumb">
-                                    <img src="<?= base_url('assets/homee/'); ?>img/svg_icon/2.svg" alt="">
-                                </div>
-                                <div class="jobs_conetent">
-                                    <a href="job_details.html"><h4>Digital Marketer</h4></a>
-                                    <div class="links_locat d-flex align-items-center">
-                                        <div class="location">
-                                            <p> <i class="fa fa-map-marker"></i> California, USA</p>
-                                        </div>
-                                        <div class="location">
-                                            <p> <i class="fa fa-clock-o"></i> Part-time</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="jobs_right">
-                                <div class="apply_now">
-                                    <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
-                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>
-                                </div>
-                                <div class="date">
-                                    <p>Date line: 31 Jan 2020</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12">
-                        <div class="single_jobs white-bg d-flex justify-content-between">
-                            <div class="jobs_left d-flex align-items-center">
-                                <div class="thumb">
-                                    <img src="<?= base_url('assets/homee/'); ?>img/svg_icon/3.svg" alt="">
-                                </div>
-                                <div class="jobs_conetent">
-                                    <a href="job_details.html"><h4>Wordpress Developer</h4></a>
-                                    <div class="links_locat d-flex align-items-center">
-                                        <div class="location">
-                                            <p> <i class="fa fa-map-marker"></i> California, USA</p>
-                                        </div>
-                                        <div class="location">
-                                            <p> <i class="fa fa-clock-o"></i> Part-time</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="jobs_right">
-                                <div class="apply_now">
-                                    <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
-                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>
-                                </div>
-                                <div class="date">
-                                    <p>Date line: 31 Jan 2020</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12">
-                        <div class="single_jobs white-bg d-flex justify-content-between">
-                            <div class="jobs_left d-flex align-items-center">
-                                <div class="thumb">
-                                    <img src="<?= base_url('assets/homee/'); ?>img/svg_icon/4.svg" alt="">
-                                </div>
-                                <div class="jobs_conetent">
-                                    <a href="job_details.html"><h4>Visual Designer</h4></a>
-                                    <div class="links_locat d-flex align-items-center">
-                                        <div class="location">
-                                            <p> <i class="fa fa-map-marker"></i> California, USA</p>
-                                        </div>
-                                        <div class="location">
-                                            <p> <i class="fa fa-clock-o"></i> Part-time</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="jobs_right">
-                                <div class="apply_now">
-                                    <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
-                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>
-                                </div>
-                                <div class="date">
-                                    <p>Date line: 31 Jan 2020</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12">
-                        <div class="single_jobs white-bg d-flex justify-content-between">
-                            <div class="jobs_left d-flex align-items-center">
-                                <div class="thumb">
-                                    <img src="<?= base_url('assets/homee/'); ?>img/svg_icon/5.svg" alt="">
-                                </div>
-                                <div class="jobs_conetent">
-                                    <a href="job_details.html"><h4>Software Engineer</h4></a>
-                                    <div class="links_locat d-flex align-items-center">
-                                        <div class="location">
-                                            <p> <i class="fa fa-map-marker"></i> California, USA</p>
-                                        </div>
-                                        <div class="location">
-                                            <p> <i class="fa fa-clock-o"></i> Part-time</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="jobs_right">
-                                <div class="apply_now">
-                                    <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
-                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>
-                                </div>
-                                <div class="date">
-                                    <p>Date line: 31 Jan 2020</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12">
-                        <div class="single_jobs white-bg d-flex justify-content-between">
-                            <div class="jobs_left d-flex align-items-center">
-                                <div class="thumb">
-                                    <img src="<?= base_url('assets/homee/'); ?>img/svg_icon/1.svg" alt="">
-                                </div>
-                                <div class="jobs_conetent">
-                                    <a href="job_details.html"><h4>Creative Designer</h4></a>
-                                    <div class="links_locat d-flex align-items-center">
-                                        <div class="location">
-                                            <p> <i class="fa fa-map-marker"></i> California, USA</p>
-                                        </div>
-                                        <div class="location">
-                                            <p> <i class="fa fa-clock-o"></i> Part-time</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="jobs_right">
-                                <div class="apply_now">
-                                    <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
-                                    <a href="job_details.html" class="boxed-btn3">Apply Now</a>
-                                </div>
-                                <div class="date">
-                                    <p>Date line: 31 Jan 2020</p>
-                                </div>
-                            </div>
+                     <?php endforeach ?>
+                  
                         </div>
                     </div>
                 </div>
@@ -287,97 +142,21 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="candidate_active owl-carousel">
+                        <?php foreach ($buku as $b ): ?>
+                            
+                        
                         <div class="single_candidates text-center">
                             <div class="thumb">
                                 <img src="<?= base_url('assets/homee/'); ?>img/candiateds/1.png" alt="">
                             </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
+                            <a href="#"><h4><?= $b['judul'] ?></h4></a>
+                            <p><b><span>tersedia <?= $b['exp'] ?></span></b></p>
                         </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="<?= base_url('assets/homee/'); ?>img/candiateds/2.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="<?= base_url('assets/homee/'); ?>img/candiateds/3.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="<?= base_url('assets/homee/'); ?>img/candiateds/4.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="<?= base_url('assets/homee/'); ?>img/candiateds/5.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="<?= base_url('assets/homee/'); ?>img/candiateds/6.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="<?= base_url('assets/homee/'); ?>img/candiateds/7.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="<?= base_url('assets/homee/'); ?>img/candiateds/8.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="<?= base_url('assets/homee/'); ?>img/candiateds/9.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="<?= base_url('assets/homee/'); ?>img/candiateds/9.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="<?= base_url('assets/homee/'); ?>img/candiateds/10.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="<?= base_url('assets/homee/'); ?>img/candiateds/3.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="<?= base_url('assets/homee/'); ?>img/candiateds/4.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
+                        <?php endforeach ?>
+                       
+                      
+                     
+                      
                     </div>
                 </div>
             </div>
