@@ -61,9 +61,9 @@
                                             <li><a href="<?= base_url('home/rules/'); ?>">TATA TERTIB</a></li>
                                             <li><a href="#">KATALOG<i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="#">Teknik Informatika</a></li>
-                                                    <li><a href="#">Management Agribisnis</a></li>
-                                                    <li><a href="#">Teknologi Industri Pangan</a></li>
+                                                    <li><a href="<?= base_url('home/katalogtif') ?>">Teknik Informatika</a></li>
+                                                    <li><a href="<?= base_url('home/katalogmna') ?>">Management Agribisnis</a></li>
+                                                    <li><a href="<?= base_url('home/katalogtip') ?>">Teknologi Industri Pangan</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="#">PANDUAN<i class="ti-angle-down"></i></a>

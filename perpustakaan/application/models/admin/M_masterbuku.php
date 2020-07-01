@@ -109,6 +109,7 @@ class M_masterbuku extends CI_Model {
 
 		return $this->db->affected_rows();
 	}
+	
 
 	public function kategori_by_id($id_kategori) {
 		$this->db->from('kategori');

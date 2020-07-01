@@ -3,15 +3,46 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Home extends CI_Controller
 {
+public function __construct() {
+		parent::__construct();
+		 $this->load->model('Data','tampil');
 
+		
+	}
 	public function index()
 	{
 		$data['title'] = 'Home';
-		$this->load->view('home/templates/header');
-		$this->load->view('home/index');
-		$this->load->view('home/templates/footer');
+		$data['kategori']=$this->tampil->get_all_kategori();
+		$data['prodi']=$this->tampil->get_all_prodi();
+		$data['buku']=$this->tampil->get_all_buku();
+		$this->load->view('home/templates/header',$data);
+		$this->load->view('home/index',$data);
+		$this->load->view('home/templates/footer',$data);
 	}
-
+	public function katalogtif()
+	{
+		$data['title'] = 'katalog';
+		$data['tif']=$this->tampil->getbukutif();
+		$this->load->view('home/templates/header',$data);
+		$this->load->view('home/katalog/kategori_tif',$data);
+		$this->load->view('home/templates/footer',$data);
+	}
+	public function katalogtip()
+	{
+		$data['title'] = 'katalog2';
+		$data['tip']=$this->tampil->getbukutip();
+		$this->load->view('home/templates/header',$data);
+		$this->load->view('home/katalog/kategori_tip',$data);
+		$this->load->view('home/templates/footer',$data);
+	}
+	public function katalogmna()
+	{
+		$data['title'] = 'katalog2';
+		$data['mna']=$this->tampil->getbukumna();
+		$this->load->view('home/templates/header',$data);
+		$this->load->view('home/katalog/kategori_mna',$data);
+		$this->load->view('home/templates/footer',$data);
+	}
 	public function profil()
 	{
 		$data['title'] = 'profile';
