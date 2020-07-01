@@ -4,21 +4,16 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="Home" />
+        android:title="Katalog Buku TIF" />
 
     <item
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/ic_baseline_book_24"
-        android:title="Feed" />
+        android:title="Katalog Buku TIP" />
 
     <item
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_baseline_comment_24"
-        android:title="Review" />
-
-    <item
-        android:id="@+id/user"
-        android:icon="@drawable/ic_baseline_person_24"
-        android:title="User" />
+        android:title="Katalog Buku MNA" />
 
 </menu>

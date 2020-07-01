@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dashboard">
+    tools:context=".KatalogBuku">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/book">
+
         <LinearLayout
             android:gravity="center"
             android:padding="15dp"
@@ -20,7 +22,7 @@
                 android:layout_weight="1"
                 android:textStyle="bold"
                 android:textSize="27dp"
-                android:text="Katalog Buku"
+                android:text="Cari Buku"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <Button
@@ -181,5 +183,6 @@
         </LinearLayout>
 
     </LinearLayout>
+
 
 </LinearLayout>
