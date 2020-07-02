@@ -1,7 +1,7 @@
    <div class="col-md-offset-1 col-md-10 col-md-offset-1 well">
   <div class="form-msg"></div>
     <button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    <h3 style="display:block; text-align:center;" class="modal-title">Data Mahasiswa</h3>
+    <h3 style="display:block; text-align:center;" class="modal-title">Data Dosen</h3>
   <br>
   <form id="form-dosen" method="POST">
     <input type="hidden" value="" name="nip_sem"/> 

@@ -22,12 +22,153 @@ class Masterbuku extends AUTH_Controller
 			$data['deskripsi'] 		= "Data buku";
 			$data['pagae']		= "databuku";
 			$data['userdata'] 		= $this->userdata;
-			$this->template->views('admine/masterbuku/buku', $data);
+			$data['data_buku'] = $this->master->buku_all("buku");
+			$data['data_pengarang'] = $this->master->pengarang_all("tb_pengarang");
+			$data['data_kategori'] = $this->master->kategori_all("kategori");
+			$data['data_asal_buku'] = $this->master->asal_all("tb_asal_buku");
+			$data['data_penerbit'] = $this->master->penerbit_all("tb_penerbit");
+			$data['data_prodi'] = $this->master->prodi_all("tb_prodi");
+			$data['model'] = $this->master;
 
+			$data['modal_buku'] = show_my_modal_besar('admine/modal/mdl_buku', 'buku', $data);
+			$this->template->views('admine/masterbuku/buku', $data);
 		}
 
-		public function tambah_buku() {
+		public function buku_tambah() {
+			$this->form_validation->set_rules('isbn', 'isbn', 'trim|required');
+			$this->form_validation->set_rules('judul', 'judul', 'required');
+			$this->form_validation->set_rules('edisi', 'edisi', 'required');
+			$data 	= $this->input->post();
+			if ($this->form_validation->run() == TRUE) {
+				// cek nim ada atau tidak
+				$cek = $this->master->isbn_cek($this->input->post('isbn'));
+				if ($cek > 0) {
+					$out['status'] = 'form';
+					$out['msg'] = show_err_msg('ISBN  sudah terdaftar');
+				}else{
+					$data = array('isbn' => $this->input->post('isbn'),
+								'judul' => $this->input->post('judul'),
+								'id_kategori' => $this->input->post('kategori'),
+								'id_prodi' => $this->input->post('prodi'),	
+								'id_pengarang' => $this->input->post('pengarang'),
+								'id_penerbit' => $this->input->post('penerbit'),
+								'id_asal_buku' => $this->input->post('asal_buku'),
+								'tahun_terbit' => $this->input->post('tahun'),
+								'edisi' => $this->input->post('edisi'),
+								'exp' => 0,
+								'img' => $this->input->post('img')
+							 );
+					// upload gambar
+					if (!empty($_FILES['img']['name'])) {
+						$upload = $this->_do_upload();
+						$data['img'] = $upload;
+					}else{
+						$data['img'] = "default.jpg";
+					}
+					$result = $this->master->buku_tambah($data);
+						if ($result > 0) {
+							$out['status'] = '';
+							$out['msg'] = show_succ_msg('Data Buku Berhasil ditambahkan', '20px');
+						} else {
+							$out['status'] = '';
+							$out['msg'] = show_err_msg('Data Buku Gagal ditambahkan', '20px');
+						}
+				}
+			} else {
+				$out['status'] = 'form';
+				$out['msg'] = show_err_msg(validation_errors());
+			}
 
+			echo json_encode($out);
+		}
+		public function buku_ubah($id_buku){
+			$data = $this->master->buku_by_id($id_buku);
+			echo json_encode($data);
+		}
+
+		public function buku_proses_ubah() {
+			$this->form_validation->set_rules('isbn', 'isbn', 'trim|required');
+			$this->form_validation->set_rules('judul', 'judul', 'required');
+			$this->form_validation->set_rules('edisi', 'edisi', 'required');
+			$data = $this->input->post();
+			if ($this->form_validation->run() == TRUE) {
+				$data = $this->input->post();
+				if($this->input->post('remove_photo')) // jika remove photo di centang
+				{
+					if(file_exists('upload/buku/'.$this->input->post('remove_photo')) && $this->input->post('remove_photo' && $data['remove_photo']!="default.jpg")){
+						unlink('upload/buku/'.$this->input->post('remove_photo'));
+						$data['foto'] = '';
+					}
+					
+				}
+
+				if(!empty($_FILES['img']['name'])){
+					$upload = $this->_do_upload();
+					
+					//delete file
+					$buku = $this->master->buku_by_id($this->input->post('id_buku'));
+					if(file_exists('upload/buku/'.$buku->foto) && $buku->foto)
+						unlink('upload/buku/'.$buku->foto);
+
+					$data['foto'] = $upload;
+				}else{
+					$data['foto'] = $this->input->post('foto_lama');
+				}
+
+				$result = $this->master->buku_ubah($data);
+
+				if ($result > 0) {
+					$out['status'] = '';
+					$out['msg'] = show_succ_msg('Data buku Berhasil diubah', '20px');
+				} else {
+					$out['status'] = '';
+					$out['msg'] = show_succ_msg('Data buku Gagal diubah', '20px');
+				}
+			} else {
+				$out['status'] = 'form';
+				$out['msg'] = show_err_msg(validation_errors());
+			}
+
+			echo json_encode($out);
+		}
+
+		private function _do_upload()
+		{
+			$config['upload_path']          = 'upload/buku';
+	        $config['allowed_types']        = 'gif|jpg|png';
+	        $config['max_size']             = 2048; //set max size allowed in Kilobyte
+	        $config['max_width']            = 1000; // set max width image allowed
+	        $config['max_height']           = 1000; // set max height allowed
+	        $config['file_name']            = round(microtime(true) * 1000); //just milisecond timestamp fot unique session_name()
+
+	        $this->load->library('upload', $config);
+
+	        if(!$this->upload->do_upload('img')) //upload and validate
+	        {
+				$out['status'] = 'form';
+				$out['msg'] = show_err_msg('Upload Gagal: '.$this->upload->display_errors('',''));
+				echo json_encode($out);
+				exit();
+			}
+			return $this->upload->data('file_name');
+		}
+
+		public function buku_hapus() {
+			$id_buku = $_POST['id_buku'];
+			$ray = $this->master->buku_by_id($_POST['id_buku']);
+			$data = array('foto' => $ray->foto );				
+			if (file_exists('upload/buku/'.$data['foto']) && $data['foto'] && $data['foto'] !="default.jpg") {
+				unlink('upload/buku/'.$data['foto']);
+			}
+			$result = $this->master->buku_hapus($id_buku);
+
+			if ($result > 0) {
+				//delete file
+				
+				echo show_succ_msg('Data Buku Berhasil dihapus', '20px');
+			} else {
+				echo show_err_msg('Data Buku Gagal dihapus', '20px');
+			}
 		}
 		// tutup buku
 

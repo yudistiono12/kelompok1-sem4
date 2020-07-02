@@ -2,6 +2,54 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_masterbuku extends CI_Model {
+	// buka buku
+	public function buku_all($table) {
+		 return $this->db->get($table);
+	}
+	public function countRow($status,$id_buku){
+		$query = $this->db->query("SELECT status FROM detail_buku WHERE status='".$status."' AND id_buku='".$id_buku."'");
+		echo $query->num_rows();
+	}
+
+	public function countRow_pinjam($status,$id_pinjam){
+		$query = $this->db->query("SELECT status FROM tb_detail_pinjam WHERE status='".$status."' AND id_pinjam='".$id_pinjam."'");
+		$query->num_rows();
+	}
+
+	public function isbn_cek($isbn) {
+		return $this->db->query("SELECT * FROM buku WHERE isbn ='".$isbn."'")->num_rows();
+	}
+
+	public function buku_tambah($data) {
+		$sql = "INSERT INTO buku VALUES('', '".$data['judul']."', '".$data['isbn']."', '".$data['id_kategori']."', '".$data['id_pengarang']."', '".$data['id_asal_buku']."', '".$data['id_penerbit']."', '".$data['id_prodi']."', '".$data['tahun_terbit']."', '".$data['edisi']."', '".$data['exp']."', '".$data['img']."')";
+
+		$this->db->query($sql);
+
+		return $this->db->affected_rows();
+	}
+
+	public function buku_by_id($id_buku) {
+		$this->db->from('buku');
+		$this->db->where('id_buku',$id_buku);
+		$query = $this->db->get();
+
+		return $query->row();
+	}
+	public function buku_ubah($data) {
+		$sql = "UPDATE buku SET isbn='" .$data['isbn'] ."', judul='" .$data['judul'] ."', id_kategori='" .$data['kategori'] ."', id_pengarang='" .$data['pengarang'] ."', asal_buku='" .$data['asal_buku']."', id_penerbit='" .$data['penerbit'] ."', id_prodi='" .$data['prodi'] ."', tahun_terbit='" .$data['tahun'] ."', edisi='" .$data['edisi'] ."', foto='" .$data['foto'] ."' WHERE id_buku='" .$data['id_buku'] ."'";
+
+		$this->db->query($sql);
+
+		return $this->db->affected_rows();
+	}
+	public function buku_hapus($id_buku) {
+		$sql = "DELETE FROM buku WHERE id_buku='" .$id_buku ."'";
+
+		$this->db->query($sql);
+
+		return $this->db->affected_rows();
+	}
+	// tutup buku
 
 	// buka penerbit
 	public function penerbit_data($like_value = NULL, $column_order = NULL, $column_dir = NULL, $limit_start = NULL, $limit_length = NULL)
@@ -68,6 +116,10 @@ class M_masterbuku extends CI_Model {
 
 		return $this->db->affected_rows();
 	}
+	public function penerbit_all($table)
+    {
+        return $this->db->get($table);
+    }
 	// tutup penerbit
 
 	// buka kategori
@@ -134,6 +186,9 @@ class M_masterbuku extends CI_Model {
 
 		return $this->db->affected_rows();
 	}
+	public function kategori_all($table) {
+		 return $this->db->get($table);
+	}
 	// tutup kategori
 
 	// buka pengarang
@@ -198,6 +253,15 @@ class M_masterbuku extends CI_Model {
 		$this->db->query($sql);
 
 		return $this->db->affected_rows();
+	}
+	public function pengarang_all($table) {
+		 return $this->db->get($table);
+	}
+	public function asal_all($table) {
+		 return $this->db->get($table);
+	}
+	public function prodi_all($table) {
+		 return $this->db->get($table);
 	}
 	// tutup pengarang
 }
