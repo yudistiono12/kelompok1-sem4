@@ -37,6 +37,8 @@
                 <?php endforeach ?>
                 
             </div>
+               <b>*Untuk melihat detail buku silahlan datang ke perpustakaan Secara Langsung*</b>
         </div>
     </div>
     <!-- popular_catagory_area_end  -->
+

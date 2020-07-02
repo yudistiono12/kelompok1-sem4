@@ -111,7 +111,7 @@
                             <div class="jobs_right">
                                 <div class="apply_now">
                                     <a class="heart_mark" href="#"> <i class="ti-heart"></i> </a>
-                                    <a href="job_details.html" class="boxed-btn3">Lihat</a>
+                                    
                                 </div>
                                 <div class="date">
                                     <p>tampilkan buku berdasarkan <b>kategori</b></p>
@@ -147,7 +147,7 @@
                         
                         <div class="single_candidates text-center">
                             <div class="thumb">
-                                <img src="<?= base_url('assets/homee/'); ?>img/candiateds/1.png" alt="">
+                                <img src="<?= base_url('assets/homee/'); ?>img/candiateds/buku.png" alt="">
                             </div>
                             <a href="#"><h4><?= $b['judul'] ?></h4></a>
                             <p><b><span>tersedia <?= $b['exp'] ?></span></b></p>
@@ -169,16 +169,18 @@
             <div class="row">
                 <div class="col-lg-5 offset-lg-1 col-md-6">
                     <div class="searching_text">
-                        <h3>Looking for a Job?</h3>
-                        <p>We provide online instant cash loans with quick approval </p>
-                        <a href="#" class="boxed-btn3">Browse Job</a>
+                        
+                        <p>“Ketika kamu ragu akan sesuatu, carilah di perpustakaan.”  <br>
+                        - J. K. Rowling, Penulis novel Harry Potter </p>
+                        
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1 col-md-6">
                     <div class="searching_text">
-                        <h3>Looking for a Expert?</h3>
-                        <p>We provide online instant cash loans with quick approval </p>
-                        <a href="#" class="boxed-btn3">Post a Job</a>
+                        
+                        <p>“Aku adalah bagian dari semua yang telah aku baca.” <br>
+                         - Theordore Rosevelt, Presiden Amerika ke 26 </p>
+                        
                     </div>
                 </div>
             </div>

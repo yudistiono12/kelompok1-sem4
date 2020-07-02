@@ -94,10 +94,10 @@
                         </div>
                         <div class="job_content">
                             <ul>
-                                <li><a href="">jam pelayanan</a></li>
-                                <li><a href="">Keanggotaan</a></li>
-                                <li><a href="">Sirkulasi</a></li>
-                                <li><a href="">Katalog</a></li>
+                                <li><a href="<?= base_url('home/jam_layanan') ?>">jam pelayanan</a></li>
+                                <li><a href="<?= base_url('home/panduan') ?>">Keanggotaan</a></li>
+                                <li><a href="<?= base_url('home/panduan_sirkulasi') ?>">Sirkulasi</a></li>
+                                <li><a href="<?= base_url('home/index') ?>">Katalog</a></li>
                             </ul>
                         </div>
                     </div>
