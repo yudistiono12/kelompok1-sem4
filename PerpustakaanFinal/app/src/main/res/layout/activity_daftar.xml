@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DaftarActivity">
+
+    <ImageView
+        android:id="@+id/formbackg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/formlogo"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:src="@drawable/logopolije"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perpustakaan Polibon"
+        android:layout_below="@id/formlogo"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="27dp"
+        android:gravity="center"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/formlogo"
+        android:id="@+id/scrollView"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/transparan"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lakukan Registrasi"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Silahkan isi sesuai dengan identitas anda!"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginBottom="30dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Isikan NIM"
+                android:inputType="number"
+                android:paddingStart="23dp"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="14sp"
+                android:id="@+id/editTextNim"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="23dp" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Isikan Nama Anda"
+                android:paddingStart="23dp"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="14sp"
+                android:id="@+id/editTextNama"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="23dp" />
+
+           <!-- <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Silahkan Pilih Jenis Kelamin :"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:paddingStart="23dp"
+                android:paddingLeft="23dp"
+                android:layout_marginBottom="8dp"/>
+
+            <RadioGroup
+                android:id="@+id/rbGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/male"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laki-Laki"
+                    android:checked="true"/>
+                <RadioButton
+                    android:id="@+id/female"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan"
+                    android:layout_marginBottom="10dp"/>
+            </RadioGroup>-->
+
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Isikan Password"
+                android:paddingStart="23dp"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="14sp"
+                android:inputType="textPassword"
+                android:id="@+id/editTextPassword"
+                android:paddingLeft="23dp"
+                android:layout_marginBottom="20dp"/>
+
+                        <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Isikan Alamat"
+                android:paddingStart="23dp"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="14sp"
+                android:id="@+id/editTextAlamat"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="23dp" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Pilih Fakultas"
+                android:paddingStart="23dp"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="14sp"
+                android:id="@+id/editTextFakultas"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="23dp" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Pilih Program Studi"
+                android:paddingStart="23dp"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="14sp"
+                android:id="@+id/editTextProdi"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="23dp" />
+
+            <!--<AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Password"
+                android:paddingStart="23dp"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="14sp"
+                android:inputType="textPassword"
+                android:id="@+id/Password"
+                android:paddingLeft="23dp"
+                android:layout_marginBottom="10dp"/>-->
+
+            <Button
+                android:id="@+id/buttonSimpan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:text="DAFTAR"
+                android:textStyle="bold"
+                android:background="@drawable/register_button"
+                android:layout_marginHorizontal="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi ini masih tahap uji, dibuat oleh kelompok 1 TIF Bondowoso"
+        android:textColor="@color/white"
+        android:layout_below="@id/scrollView"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        />
+
+</RelativeLayout>
